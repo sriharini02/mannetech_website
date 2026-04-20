@@ -112,7 +112,7 @@ export default function ContactPage() {
             <ParallaxImage amount={30} className="aspect-video">
               <Image
                 src={PAGE_IMAGES.contact}
-                alt="Han Solutions studio — Edison, NJ"
+                alt="Han Solutions studio — Austin, TX"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"

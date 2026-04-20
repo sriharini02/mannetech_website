@@ -161,7 +161,7 @@ export default function Header() {
             {/* CTA + Mobile Toggle */}
             <div className="flex items-center gap-3">
               <Link href="/contact" className="hidden lg:inline-flex btn-primary">
-                <span>Start a Project</span>
+                <span>Contact Us</span>
                 <ArrowUpRight className="w-3.5 h-3.5 btn-arrow" strokeWidth={2} />
               </Link>
               <button
@@ -256,7 +256,7 @@ export default function Header() {
                   {COMPANY.phone} · {COMPANY.address}
                 </p>
                 <Link href="/contact" className="btn-primary mt-8 w-full justify-center">
-                  <span>Start a Project</span>
+                  <span>Contact Us</span>
                   <ArrowUpRight className="w-3.5 h-3.5 btn-arrow" strokeWidth={2} />
                 </Link>
               </motion.div>

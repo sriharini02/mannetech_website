@@ -102,7 +102,7 @@ export default function PrivacyPolicyPage() {
                     "Object to or restrict the processing of your data.",
                     "Withdraw consent at any time where processing is based on consent.",
                   ],
-                  footer: `To exercise any of these rights, please contact us at info@hansolutions.com.`,
+                  footer: `To exercise any of these rights, please contact us at hr@hanitsolutions.com.`,
                 },
                 {
                   title: "9. Third-Party Links",

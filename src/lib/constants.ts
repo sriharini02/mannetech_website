@@ -7,14 +7,14 @@ export const COMPANY = {
     "Han Solutions is a forward-thinking technology partner delivering innovative, cost-effective IT solutions. We work alongside organizations of every size — building scalable software, placing elite talent, and shaping the digital infrastructure of tomorrow.",
   shortDescription:
     "A technology partner for ambitious businesses — building software, placing talent, driving transformation.",
-  address: "1581 NJ-27, Edison, NJ 08817",
-  phone: "(575) 770-5194",
-  phoneHref: "+15757705194",
-  email: "info@hansolutions.com",
-  hours: "Mon–Fri · 9 AM – 6 PM EST",
+  address: "5900 Balcones Drive # 31015, Austin, TX 78731",
+  phone: "+1 (214) 204-8813",
+  phoneHref: "+12142048813",
+  email: "hr@hanitsolutions.com",
+  hours: "Mon–Fri · 9 AM – 6 PM CST",
   domain: "https://www.hansolutions.com",
   founded: "2021",
-  mapCoords: { lat: 40.5187, lng: -74.3487 },
+  mapCoords: { lat: 30.3496, lng: -97.7482 },
   social: {
     linkedin: "#",
     twitter: "#",
@@ -488,7 +488,7 @@ export const JOBS = [
     title: "Software Developer",
     code: "HSD24",
     type: "Full-time",
-    location: "Edison, NJ / Remote",
+    location: "Austin, TX / Remote",
     experience: "Master's or equivalent",
     description:
       "Develop, create, and modify computer applications software. Design and implement scalable backend systems and responsive front-end interfaces.",
@@ -505,7 +505,7 @@ export const JOBS = [
     title: "QA Engineer I",
     code: "HQE24",
     type: "Full-time",
-    location: "Edison, NJ / Remote",
+    location: "Austin, TX / Remote",
     experience: "Master's + 2 yrs exp or equivalent",
     description:
       "Design and execute test plans, automate testing processes, and ensure software quality across every deliverable.",
@@ -522,7 +522,7 @@ export const JOBS = [
     title: "QA Engineer II",
     code: "HQE23",
     type: "Full-time",
-    location: "Edison, NJ / Remote",
+    location: "Austin, TX / Remote",
     experience: "Bachelor's + 3 yrs exp or equivalent",
     description:
       "Lead quality assurance efforts including test strategy, automation framework design, and performance testing.",
@@ -539,7 +539,7 @@ export const JOBS = [
     title: "DevOps Engineer",
     code: "HDE24",
     type: "Full-time",
-    location: "Edison, NJ / Hybrid",
+    location: "Austin, TX / Hybrid",
     experience: "Bachelor's + 2 yrs exp or equivalent",
     description:
       "Design, implement, and manage CI/CD pipelines, container orchestration, and cloud infrastructure automation.",
@@ -556,7 +556,7 @@ export const JOBS = [
     title: "Full Stack Developer",
     code: "HFS24",
     type: "Full-time",
-    location: "Edison, NJ / Remote",
+    location: "Austin, TX / Remote",
     experience: "Bachelor's + 2 yrs exp or equivalent",
     description:
       "Build and maintain full-stack web applications using modern JavaScript frameworks and scalable backend technologies.",

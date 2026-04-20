@@ -93,7 +93,7 @@ export default function HomePage() {
             <div className="flex items-center justify-between mb-10 md:mb-16">
               <p className="eyebrow flex items-center">
                 <span className="w-2 h-2 bg-gold rounded-full mr-3 animate-pulse" />
-                <span>Est. 2021 · Edison, NJ</span>
+                <span>Est. 2021 · Austin, TX</span>
               </p>
               <p className="eyebrow hidden md:block">
                 <span className="text-ink">—</span> A technology studio for ambitious businesses
@@ -147,7 +147,7 @@ export default function HomePage() {
                 </p>
                 <div className="flex flex-col gap-3">
                   <Link href="/contact" className="btn-primary justify-center">
-                    <span>Start a Project</span>
+                    <span>Contact Us</span>
                     <ArrowUpRight className="w-4 h-4 btn-arrow" strokeWidth={2} />
                   </Link>
                   <Link href="/services" className="btn-ghost justify-center">

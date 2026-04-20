@@ -36,7 +36,7 @@ export default function Footer() {
           <Reveal animation="fade-up" delay={0.2}>
             <div className="flex flex-col gap-4 md:items-end">
               <Link href="/contact" className="btn-primary bg-gold border-gold text-ink hover:text-ink">
-                <span>Start a Project</span>
+                <span>Contact Us</span>
                 <ArrowUpRight className="w-4 h-4 btn-arrow" strokeWidth={2} />
               </Link>
               <Link href="/book-appointment" className="text-ivory/70 hover:text-gold text-sm transition-colors">

@@ -99,7 +99,7 @@ export default function TermsOfServicePage() {
                 },
                 {
                   title: "11. Governing Law",
-                  body: "These Terms shall be governed by and construed in accordance with the laws of the State of New Jersey, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Middlesex County, New Jersey.",
+                  body: "These Terms shall be governed by and construed in accordance with the laws of the State of Texas, without regard to its conflict of law provisions. Any disputes arising under these Terms shall be subject to the exclusive jurisdiction of the courts located in Travis County, Texas.",
                 },
                 {
                   title: "12. Changes to Terms",

@@ -86,7 +86,7 @@ export default function AboutPage() {
           </Reveal>
           <div className="flex items-start justify-between mt-4">
             <p className="font-mono text-[10px] tracking-widest uppercase text-graphite">
-              [ OUR STUDIO · EDISON, NJ · {COMPANY.founded} ]
+              [ OUR STUDIO · AUSTIN, TX · {COMPANY.founded} ]
             </p>
             <p className="font-mono text-[10px] tracking-widest uppercase text-graphite hidden md:block">
               FIG. 01
