@@ -81,6 +81,11 @@ export const metadata: Metadata = {
     },
   },
   alternates: { canonical: BASE_URL },
+  icons: {
+    icon: [{ url: "/favicon.png", type: "image/png" }],
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 const jsonLd = {

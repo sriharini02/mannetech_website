@@ -7,7 +7,6 @@ import { motion } from "framer-motion";
 
 import Reveal, { RevealText } from "@/components/Reveal";
 import ParallaxImage from "@/components/ParallaxImage";
-import Logo from "@/components/Logo";
 import { COMPANY, TESTIMONIALS, PAGE_IMAGES, PRINCIPLES } from "@/lib/constants";
 
 export default function AboutPage() {
@@ -106,7 +105,13 @@ export default function AboutPage() {
             <h2 className="display-serif text-4xl md:text-5xl lg:text-6xl leading-[1] tracking-tight text-ink font-normal">
               Why <em className="italic text-gold-deep">Han</em>?
             </h2>
-            <Logo variant="mark" className="w-20 h-20 mt-10" inkColor="#0B2545" />
+            <Image
+              src="/favicon.png"
+              alt="Han Solutions mark"
+              width={503}
+              height={496}
+              className="w-20 h-20 mt-10"
+            />
           </Reveal>
 
           <div className="lg:col-span-7 lg:col-start-6 space-y-6">

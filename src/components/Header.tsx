@@ -2,10 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ArrowUpRight } from "lucide-react";
-import Logo from "./Logo";
 import { NAV_LINKS, SERVICES, COMPANY } from "@/lib/constants";
 
 export default function Header() {
@@ -51,22 +51,17 @@ export default function Header() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-3 group relative z-[60]"
+              className="group relative z-[60] inline-flex items-center"
               aria-label="Han Solutions — home"
             >
-              <Logo
-                variant="mark"
-                className="w-11 h-11 md:w-12 md:h-12 transition-transform duration-500 group-hover:rotate-[-6deg]"
-                inkColor="#0B2545"
+              <Image
+                src="/han-logo-light.png"
+                alt="Han Solutions"
+                width={1024}
+                height={320}
+                priority
+                className="h-10 md:h-12 w-auto transition-transform duration-500 group-hover:-translate-y-0.5"
               />
-              <div className="hidden sm:flex flex-col leading-none">
-                <span className="font-display text-lg md:text-xl font-semibold text-ink tracking-tight">
-                  Han
-                </span>
-                <span className="font-mono text-[10px] tracking-[0.22em] text-graphite uppercase mt-0.5">
-                  Solutions
-                </span>
-              </div>
             </Link>
 
             {/* Desktop Nav */}

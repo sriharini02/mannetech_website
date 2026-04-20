@@ -28,7 +28,6 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Reveal, { RevealText } from "@/components/Reveal";
 import Marquee from "@/components/Marquee";
 import ParallaxImage from "@/components/ParallaxImage";
-import Logo from "@/components/Logo";
 import {
   COMPANY,
   SERVICES,
@@ -138,7 +137,13 @@ export default function HomePage() {
             <div className="lg:col-span-3 flex flex-col justify-end">
               <Reveal animation="fade-up" delay={0.8}>
                 <div className="flex items-center gap-4 mb-6">
-                  <Logo variant="mark" className="w-14 h-14 shrink-0" inkColor="#0B2545" />
+                             <Image
+              src="/favicon.png"
+              alt="Han Solutions mark"
+              width={503}
+              height={496}
+              className="w-20 h-20 mt-10"
+            />
                   <div className="flex-1 h-px bg-ink/20" />
                 </div>
                 <p className="text-ink/70 text-base leading-relaxed mb-8 font-light">

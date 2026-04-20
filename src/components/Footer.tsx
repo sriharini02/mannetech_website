@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { ArrowUpRight, Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from "lucide-react";
-import Logo from "./Logo";
+import Image from "next/image";
 import Reveal from "./Reveal";
 import { COMPANY, SERVICES } from "@/lib/constants";
 
@@ -53,13 +53,19 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 md:col-span-4 pr-6">
             <Link href="/" className="inline-flex items-center gap-3 group mb-6">
-              <Logo variant="mark" className="w-10 h-10" hColor="#0b2545" inkColor="#FBF6EB" goldColor="#F4B942" />
-              <div className="leading-none">
+              <Image
+              src="/favicon.png"
+              alt="Han Solutions mark"
+              width={503}
+              height={496}
+              className="w-20 h-20 mt-10"
+            />
+              {/* <div className="leading-none">
                 <p className="font-display text-xl font-semibold">Han</p>
                 <p className="font-mono text-[10px] tracking-[0.22em] text-ivory/60 uppercase mt-0.5">
                   Solutions
                 </p>
-              </div>
+              </div> */}
             </Link>
             <p className="text-ivory/60 text-sm leading-relaxed max-w-xs mb-8">
               {COMPANY.shortDescription}
