@@ -184,32 +184,25 @@ export default function HomePage() {
 
       {/* ══════════════════════ INTRO / MANIFESTO ══════════════════════ */}
       <section className="relative py-16 sm:py-24 md:py-36 border-t border-border">
-        <div className="wrap grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-16">
-          <Reveal animation="fade-up" className="lg:col-span-4">
-              <span className="inline-flex items-center px-3 py-1 rounded-full bg-card text-ink font-mono text-[0.6rem] sm:text-[0.65rem] tracking-wider uppercase mb-3 sm:mb-4">
+        <div className="wrap max-w-5xl mx-auto">
+          <div className="text-center">
+            <Reveal animation="fade-up" delay={0.1}>
+              <span className="inline-flex items-center px-3 py-1 rounded-full bg-card text-ink font-mono text-[0.6rem] sm:text-[0.65rem] tracking-wider uppercase mb-4 sm:mb-5">
                 {pH.intro.eyebrow}
               </span>
-              <p className="font-mono text-[10px] sm:text-xs text-graphite text-ink/50 leading-loose tracking-wide">
-              [ {pH.intro.kicker} ]<br />
-              [ {COMPANY.founded} → PRESENT ]
-            </p>
-          </Reveal>
-
-          <div className="lg:col-span-8">
-            <Reveal animation="fade-up" delay={0.1}>
-              <p className="display-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-ink font-normal">
+              <p className="display-serif text-2xl sm:text-3xl md:text-5xl lg:text-6xl leading-[1.1] tracking-tight text-ink font-normal text-balance">
                 {pH.intro.heading}
               </p>
             </Reveal>
 
             <Reveal animation="fade-up" delay={0.2}>
-              <p className="text-ink/60 text-base sm:text-lg leading-relaxed font-light mt-6 sm:mt-8 max-w-3xl">
+              <p className="text-ink/60 text-base sm:text-lg leading-relaxed font-light mt-6 sm:mt-8 max-w-3xl mx-auto">
                 {pH.intro.subheading}
               </p>
             </Reveal>
 
             <Reveal animation="fade-up" delay={0.25}>
-              <div className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3">
+              <div className="mt-8 sm:mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 max-w-5xl mx-auto">
                 {pH.capabilities.map((cap, i) => (
                   <div
                     key={cap}
@@ -218,7 +211,7 @@ export default function HomePage() {
                     <span className="font-mono text-[9px] sm:text-[10px] text-graphite text-ink/50 mt-1 shrink-0">
                       0{i + 1}
                     </span>
-                    <span className="text-xs sm:text-sm text-ink/80 group-hover:text-ink transition-colors leading-tight">
+                    <span className="text-xs sm:text-sm text-ink/80 group-hover:text-ink transition-colors leading-tight text-left">
                       {cap}
                     </span>
                   </div>
@@ -254,11 +247,7 @@ export default function HomePage() {
               </h2>
             </Reveal>
 
-            <Reveal animation="fade-up" delay={0.15} className="lg:col-span-6 lg:col-start-7">
-              <p className="text-ivory/70 text-base sm:text-lg leading-relaxed font-light max-w-xl">
-                These principles guide every engagement, every decision, and every relationship. They are the foundation upon which we build enterprise trust.
-              </p>
-            </Reveal>
+            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-x-10 sm:gap-y-16">
