@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/api/", "/_next/"],
       },
     ],
-    sitemap: "https://www.hansolutions.com/sitemap.xml",
+    sitemap: "https://www.mannetechnologies.com/sitemap.xml",
   };
 }

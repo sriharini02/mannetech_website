@@ -1,11 +1,5 @@
 import React from "react";
 
-/**
- * HAN Solutions wordmark logo.
- * Recreated as inline SVG so it scales cleanly and inherits color.
- * - The "H" with a crescent swoosh underneath (ink navy)
- * - The small orbiting gold dot
- */
 interface LogoProps {
   className?: string;
   variant?: "full" | "mark" | "horizontal";
@@ -22,7 +16,6 @@ export default function Logo({
   hColor = "#FBF6EB",
 }: LogoProps) {
   if (variant === "mark") {
-    // Just the circular H mark
     return (
       <svg
         viewBox="0 0 64 64"
@@ -30,9 +23,7 @@ export default function Logo({
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        {/* Navy circle */}
         <circle cx="32" cy="32" r="30" fill={inkColor} />
-        {/* Crescent swoosh (behind H) — gold arc sweeping from bottom-left to top-right */}
         <path
           d="M 14 48 Q 10 32 22 20 Q 34 10 48 14"
           stroke={goldColor}
@@ -41,7 +32,6 @@ export default function Logo({
           fill="none"
           opacity="0.9"
         />
-        {/* H letter (ivory) */}
         <path
           d="M 20 18 L 20 46 M 20 32 L 38 32 M 38 18 L 38 46"
           stroke={hColor}
@@ -49,20 +39,18 @@ export default function Logo({
           strokeLinecap="square"
           fill="none"
         />
-        {/* Little orbiting dot, top right */}
         <circle cx="49" cy="16" r="3" fill={goldColor} />
       </svg>
     );
   }
 
   if (variant === "horizontal") {
-    // Mark + wordmark in a row
     return (
       <svg
-        viewBox="0 0 260 64"
+        viewBox="0 0 360 64"
         className={className}
         xmlns="http://www.w3.org/2000/svg"
-        aria-label="Han Solutions"
+        aria-label="Manne Technologies"
       >
         <g>
           <circle cx="32" cy="32" r="30" fill={inkColor} />
@@ -85,37 +73,36 @@ export default function Logo({
         </g>
         <text
           x="78"
-          y="28"
+          y="24"
           fill={inkColor}
           fontFamily="var(--font-fraunces), Fraunces, Georgia, serif"
           fontWeight="600"
-          fontSize="22"
+          fontSize="20"
           letterSpacing="0.02em"
         >
-          HAN
+          MANNE
         </text>
         <text
           x="78"
-          y="52"
+          y="47"
           fill={inkColor}
           fontFamily="var(--font-fraunces), Fraunces, Georgia, serif"
           fontWeight="600"
-          fontSize="22"
+          fontSize="20"
           letterSpacing="0.02em"
         >
-          SOLUTIONS
+          TECHNOLOGIES
         </text>
       </svg>
     );
   }
 
-  // Full logo with tagline (for footer / about hero)
   return (
     <svg
-      viewBox="0 0 220 240"
+      viewBox="0 0 280 240"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
-      aria-label="Han Solutions — Empowering Your Businesses"
+      aria-label="Manne Technologies — Engineering Digital Futures"
     >
       <g transform="translate(70, 10)">
         <circle cx="40" cy="40" r="38" fill={inkColor} />
@@ -136,32 +123,32 @@ export default function Logo({
         <circle cx="62" cy="18" r="4" fill={goldColor} />
       </g>
       <text
-        x="110"
+        x="140"
         y="135"
         textAnchor="middle"
         fill={inkColor}
         fontFamily="var(--font-fraunces), Fraunces, Georgia, serif"
         fontWeight="700"
-        fontSize="32"
+        fontSize="28"
         letterSpacing="0.02em"
       >
-        HAN
+        MANNE
       </text>
       <text
-        x="110"
+        x="140"
         y="170"
         textAnchor="middle"
         fill={inkColor}
         fontFamily="var(--font-fraunces), Fraunces, Georgia, serif"
         fontWeight="700"
-        fontSize="32"
+        fontSize="28"
         letterSpacing="0.02em"
       >
-        SOLUTIONS
+        TECHNOLOGIES
       </text>
-      <line x1="50" y1="190" x2="170" y2="190" stroke={inkColor} strokeWidth="1" opacity="0.25" />
+      <line x1="40" y1="190" x2="240" y2="190" stroke={inkColor} strokeWidth="1" opacity="0.25" />
       <text
-        x="110"
+        x="140"
         y="215"
         textAnchor="middle"
         fill={inkColor}
@@ -169,7 +156,7 @@ export default function Logo({
         fontSize="10"
         letterSpacing="0.28em"
       >
-        EMPOWERING YOUR BUSINESSES
+        Engineering Tomorrow's Digital Future
       </text>
     </svg>
   );

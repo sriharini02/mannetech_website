@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
-import { SERVICES, JOBS } from "@/lib/constants";
+import { SERVICES, JOBS, COMPANY } from "@/lib/constants";
 
-const BASE_URL = "https://www.hansolutions.com";
+const BASE_URL = COMPANY.domain;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
@@ -15,6 +15,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${BASE_URL}/apply`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.5 },
     { url: `${BASE_URL}/privacy-policy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
     { url: `${BASE_URL}/terms-of-service`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
+    { url: `${BASE_URL}/industries`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
+    { url: `${BASE_URL}/products`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.7 },
   ];
 
   const serviceRoutes: MetadataRoute.Sitemap = SERVICES.map((s) => ({

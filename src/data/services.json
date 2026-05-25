@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "it-services",
+    "title": "IT Services",
+    "icon": "Monitor",
+    "kicker": "01",
+    "shortDesc": "Comprehensive IT service management and enterprise infrastructure solutions that ensure operational continuity and business agility.",
+    "heroDesc": "End-to-end IT services that transform your technology operations into a strategic business enabler. From infrastructure management to enterprise service desk, we ensure your IT estate is secure, efficient, and aligned with business objectives.",
+    "sections": [
+      { "title": "IT Service Management", "desc": "ITIL-aligned service management frameworks including incident, problem, change, and configuration management, powered by intelligent automation and 24/7 global service desk operations." },
+      { "title": "Infrastructure Management", "desc": "Comprehensive management of data centers, networks, servers, storage, and end-user computing environments with proactive monitoring and predictive maintenance." },
+      { "title": "Enterprise Service Desk", "desc": "Multi-tier, omnichannel service desk with AI-powered ticket routing, self-service portals, and guaranteed SLA adherence across all business hours." },
+      { "title": "IT Asset & License Management", "desc": "Full lifecycle management of hardware and software assets, license compliance optimization, and vendor management to reduce costs and mitigate risks." },
+      { "title": "Business Continuity Planning", "desc": "Comprehensive disaster recovery and business continuity strategies ensuring minimal downtime and data integrity through any disruption scenario." },
+      { "title": "Vendor & Ecosystem Management", "desc": "Strategic management of technology vendor relationships, contract negotiations, and ecosystem integration to maximize value from your technology partnerships." }
+    ],
+    "features": ["ITIL-certified service management", "AI-powered incident resolution", "99.9% SLA compliance guarantee", "Multi-vendor ecosystem management", "Predictive infrastructure monitoring"],
+    "businessValue": "Reduce IT operational costs by up to 35% while improving service availability and accelerating incident resolution times."
+  },
+  {
+    "slug": "software-development",
+    "title": "Software Development",
+    "icon": "Terminal",
+    "kicker": "02",
+    "shortDesc": "Enterprise-grade custom software engineering that drives operational efficiency, revenue growth, and competitive differentiation.",
+    "heroDesc": "We engineer scalable, secure, and high-performance software solutions that solve complex business challenges. From microservices architectures to legacy modernization, our teams deliver production-ready software that drives measurable business outcomes.",
+    "sections": [
+      { "title": "Custom Enterprise Software", "desc": "Tailored software solutions designed around your unique business processes, built with modern architectures that scale with your growth and adapt to market changes." },
+      { "title": "Legacy Modernization", "desc": "Strategic modernization of legacy systems into cloud-native, microservices-based architectures while preserving business logic and ensuring zero business disruption." },
+      { "title": "Microservices Architecture", "desc": "Design and implementation of loosely coupled, independently deployable microservices that enable faster innovation, easier maintenance, and elastic scalability." },
+      { "title": "API Strategy & Development", "desc": "Comprehensive API design, development, and management — including REST, GraphQL, and event-driven architectures — with built-in security, rate limiting, and developer portals." },
+      { "title": "Quality Engineering", "desc": "Automated testing, performance engineering, and security testing embedded throughout the development lifecycle, ensuring production-ready quality at every release." },
+      { "title": "Platform Engineering", "desc": "Internal developer platforms, self-service infrastructure, and golden path templates that accelerate development velocity while maintaining governance and security." }
+    ],
+    "features": ["Cloud-native architecture design", "Agile/Scrum delivery at scale", "Automated CI/CD pipelines", "Comprehensive quality engineering", "24/7 production support"],
+    "businessValue": "Accelerate time-to-market by 60% while reducing defect rates by 45% through automated quality engineering and modern delivery practices."
+  },
+  {
+    "slug": "sap-solutions",
+    "title": "SAP Solutions",
+    "icon": "LayoutGrid",
+    "kicker": "03",
+    "shortDesc": "End-to-end SAP consulting, implementation, and managed services that maximize your SAP investment and drive operational excellence.",
+    "heroDesc": "As a certified SAP partner, we deliver comprehensive SAP services spanning S/4HANA migration, implementation, customization, and managed operations. Our SAP-certified consultants bring deep functional and technical expertise across industries.",
+    "sections": [
+      { "title": "SAP S/4HANA Migration", "desc": "Strategic migration from legacy ECC to S/4HANA with systematic data migration, business process adaptation, and change management ensuring smooth, risk-mitigated transition." },
+      { "title": "SAP Implementation & Rollout", "desc": "Greenfield and brownfield SAP implementations with best-practice accelerators, pre-configured industry templates, and global rollout expertise across 40+ countries." },
+      { "title": "SAP Business Transformation", "desc": "End-to-end business process re-engineering powered by SAP technologies, aligning people, processes, and systems for maximum operational efficiency." },
+      { "title": "SAP Managed Services", "desc": "24/7 SAP application management, including AMS, BASIS support, performance tuning, and continuous improvement to keep your SAP landscape running optimally." },
+      { "title": "SAP S/4HANA Cloud", "desc": "Cloud deployment of SAP S/4HANA with predictable subscription pricing, automatic updates, and embedded best practices for faster time-to-value." },
+      { "title": "SAP Analytics & Reporting", "desc": "SAP Analytics Cloud, BW/4HANA, and SAP Data Warehouse Cloud solutions that deliver real-time business intelligence and predictive insights across your enterprise." }
+    ],
+    "features": ["Certified SAP partner", "200+ SAP consultants", "S/4HANA system conversion expertise", "SAP Activate methodology", "24/7 AMS support"],
+    "businessValue": "Achieve 30% faster financial close, 25% inventory reduction, and 20% improvement in supply chain efficiency through optimized SAP solutions."
+  },
+  {
+    "slug": "digital-transformation",
+    "title": "Digital Transformation",
+    "icon": "Zap",
+    "kicker": "04",
+    "shortDesc": "Strategic digital transformation that fundamentally changes how your business operates and delivers value to customers.",
+    "heroDesc": "We help enterprises reimagine their business models, operations, and customer experiences through the strategic application of digital technologies. Our transformation methodology combines business strategy, process engineering, and technology innovation.",
+    "sections": [
+      { "title": "Digital Strategy & Roadmapping", "desc": "Comprehensive digital maturity assessments, technology blueprints, and phased transformation roadmaps aligned to your business strategy and growth objectives." },
+      { "title": "Process Digitization & Automation", "desc": "Intelligent automation of business processes using RPA, BPM, and AI — reducing manual effort, eliminating errors, and freeing talent for higher-value work." },
+      { "title": "Customer Experience Transformation", "desc": "Omnichannel customer engagement platforms, personalization engines, and unified commerce solutions that deliver exceptional experiences at every touchpoint." },
+      { "title": "Operating Model Transformation", "desc": "Redesign of organizational structures, operating models, and governance frameworks to enable digital-first operations and accelerate decision-making." },
+      { "title": "Data-Driven Business Models", "desc": "Monetization of data assets through analytics platforms, data marketplaces, and insight-as-a-service models that create new revenue streams." },
+      { "title": "Change Management & Adoption", "desc": "Structured change management programs ensuring technology adoption, cultural transformation, and sustainable organizational change." }
+    ],
+    "features": ["Proven transformation methodology", "Industry-specific accelerators", "End-to-end change management", "ROI-driven delivery framework", "200+ transformation programs"],
+    "businessValue": "Unlock 20-30% revenue growth through new digital channels, 40% operational efficiency gains, and 3x faster time-to-market for new products."
+  },
+  {
+    "slug": "cloud-services",
+    "title": "Cloud Services",
+    "icon": "Cloud",
+    "kicker": "05",
+    "shortDesc": "Enterprise cloud strategy, migration, and optimization services that accelerate innovation while reducing costs.",
+    "heroDesc": "We architect, migrate, and optimize enterprise cloud environments across AWS, Azure, and GCP. Our cloud practice delivers multi-cloud strategies, cloud-native development, FinOps optimization, and managed cloud operations.",
+    "sections": [
+      { "title": "Cloud Strategy & Assessment", "desc": "Comprehensive cloud readiness assessments, total cost of ownership analysis, and strategic migration roadmaps aligned to business objectives." },
+      { "title": "Cloud Migration & Modernization", "desc": "Systematic migration of workloads to cloud environments with rehost, replatform, and refactor strategies minimizing disruption and maximizing cloud benefits." },
+      { "title": "Cloud-Native Development", "desc": "Design and development of cloud-native applications using containers, serverless computing, and managed services for maximum agility and scalability." },
+      { "title": "Multi-Cloud Architecture", "desc": "Architecture design spanning multiple cloud providers with unified management, workload portability, and optimized cost across AWS, Azure, and GCP." },
+      { "title": "FinOps & Cloud Optimization", "desc": "Cloud financial management including cost allocation, rightsizing, reserved instance optimization, and continuous cost governance to maximize cloud ROI." },
+      { "title": "Managed Cloud Operations", "desc": "24/7 cloud infrastructure management with automated monitoring, incident response, patch management, and security compliance across all cloud environments." }
+    ],
+    "features": ["Multi-cloud certified architects", "50+ Cloud migration programs", "FinOps practitioner certified", "Cloud security center of excellence", "24/7 cloud operations"],
+    "businessValue": "Reduce infrastructure costs by 40%, achieve 99.99% application availability, and accelerate development velocity by 5x through cloud-native adoption."
+  },
+  {
+    "slug": "ai-automation",
+    "title": "AI & Automation",
+    "icon": "Brain",
+    "kicker": "06",
+    "shortDesc": "Intelligent automation and AI solutions that transform operations, enhance decision-making, and create competitive advantage.",
+    "heroDesc": "We help enterprises harness artificial intelligence and intelligent automation to drive operational efficiency, unlock insights, and create differentiated customer experiences. From strategy to production deployment, our AI practice delivers measurable business value.",
+    "sections": [
+      { "title": "AI Strategy & Use Case Identification", "desc": "Systematic identification of high-value AI use cases, feasibility assessments, and strategic roadmaps that prioritize business impact over technology buzz." },
+      { "title": "Machine Learning & Deep Learning", "desc": "Custom ML model development for predictive analytics, demand forecasting, anomaly detection, recommendation engines, and computer vision applications." },
+      { "title": "Intelligent Process Automation", "desc": "Combined RPA, AI, and BPM capabilities delivering end-to-end intelligent automation that handles both structured and unstructured processes." },
+      { "title": "Natural Language Processing", "desc": "Conversational AI, intelligent document processing, sentiment analysis, and language understanding solutions that extract value from unstructured text." },
+      { "title": "MLOps & AI Governance", "desc": "Production-grade ML pipelines, model monitoring, versioning, and governance frameworks ensuring AI systems remain accurate, fair, and compliant." },
+      { "title": "Conversational AI & Virtual Assistants", "desc": "Enterprise-grade chatbots and voice assistants using NLU, large language models, and knowledge graphs for customer service and employee productivity." }
+    ],
+    "features": ["200+ AI models deployed", "MLOps certified practitioners", "Responsible AI framework", "Multi-cloud AI infrastructure", "AI center of excellence"],
+    "businessValue": "Reduce operational costs by 45% through intelligent automation, increase forecast accuracy by 30%, and improve customer satisfaction scores by 25%."
+  },
+  {
+    "slug": "cybersecurity",
+    "title": "Cybersecurity",
+    "icon": "Shield",
+    "kicker": "07",
+    "shortDesc": "Comprehensive cybersecurity solutions that protect enterprise assets, ensure compliance, and enable business growth with confidence.",
+    "heroDesc": "We protect your digital enterprise with multi-layered security strategies, advanced threat detection, and 24/7 security operations. Our cybersecurity practice helps organizations build resilience against evolving threats while maintaining regulatory compliance.",
+    "sections": [
+      { "title": "Security Strategy & Governance", "desc": "Enterprise security program development, risk management frameworks, security policies, and board-level cybersecurity strategy aligned to business objectives." },
+      { "title": "Managed Detection & Response", "desc": "24/7 SOC operations with advanced SIEM, EDR, and XDR capabilities providing continuous threat monitoring, hunting, and rapid incident response." },
+      { "title": "Zero Trust Architecture", "desc": "Design and implementation of zero-trust security models including micro-segmentation, identity-aware access, continuous verification, and least-privilege controls." },
+      { "title": "Cloud Security", "desc": "Comprehensive cloud security posture management, workload protection, CASB, and cloud infrastructure entitlement management across multi-cloud environments." },
+      { "title": "Compliance & Risk Management", "desc": "Regulatory compliance support for SOC 2, HIPAA, GDPR, PCI DSS, ISO 27001, and industry-specific frameworks with continuous compliance monitoring." },
+      { "title": "Identity & Access Management", "desc": "Enterprise IAM solutions including SSO, MFA, privileged access management, identity governance, and customer identity and access management." }
+    ],
+    "features": ["24/7 SOC operations", "Certified security professionals", "Zero-trust architecture expertise", "Compliance automation", "Threat intelligence integration"],
+    "businessValue": "Reduce security incident response time by 80%, achieve compliance with 5+ regulatory frameworks, and prevent an average of $5.2M in potential breach costs."
+  },
+  {
+    "slug": "managed-services",
+    "title": "Managed Services",
+    "icon": "Settings",
+    "kicker": "08",
+    "shortDesc": "Proactive, SLA-backed managed services that optimize your IT operations and let you focus on business growth.",
+    "heroDesc": "Our managed services provide end-to-end IT operations management, infrastructure monitoring, application support, and service desk operations — all backed by guaranteed SLAs and delivered by certified professionals.",
+    "sections": [
+      { "title": "Application Management Services", "desc": "Full lifecycle application support including maintenance, enhancement, performance optimization, and end-user support for enterprise applications." },
+      { "title": "Infrastructure Managed Services", "desc": "24/7 monitoring and management of servers, networks, storage, databases, and cloud infrastructure with proactive issue resolution." },
+      { "title": "Cloud Managed Services", "desc": "Ongoing cloud operations management including cost optimization, security monitoring, backup management, and cloud infrastructure governance." },
+      { "title": "Network Operations Center", "desc": "24x7 NOC services providing real-time network monitoring, performance analysis, incident management, and vendor coordination." },
+      { "title": "IT Service Desk", "desc": "Multi-tier, global service desk with ITIL-aligned incident, problem, and request management, available across multiple channels and languages." },
+      { "title": "SAP Managed Services", "desc": "Dedicated SAP application management including BASIS, ABAP support, performance tuning, release management, and SAP cloud operations." }
+    ],
+    "features": ["SLA-backed service guarantees", "ITIL-certified delivery", "24/7 follow-the-sun support", "AI-powered service desk", "Proactive issue resolution"],
+    "businessValue": "Reduce IT operational costs by 30-40%, achieve 99.9% service availability, and free internal teams to focus on strategic business initiatives."
+  },
+  {
+    "slug": "product-development",
+    "title": "Product Development",
+    "icon": "Lightbulb",
+    "kicker": "09",
+    "shortDesc": "End-to-end product engineering that transforms ideas into market-leading digital products.",
+    "heroDesc": "We partner with enterprises and startups alike to design, build, and scale digital products that delight users and drive business growth. Our product engineering teams bring deep expertise in product strategy, UX design, and modern technology stacks.",
+    "sections": [
+      { "title": "Product Strategy & Discovery", "desc": "Market research, user research, competitive analysis, and product strategy workshops that define vision, validate assumptions, and prioritize features for maximum impact." },
+      { "title": "UX/UI Design & Research", "desc": "Human-centered design processes including user research, information architecture, interaction design, visual design, and usability testing." },
+      { "title": "MVP Development & Validation", "desc": "Rapid MVP development using lean startup methodology — getting working products to market quickly for user feedback and iterative improvement." },
+      { "title": "Scalable Product Engineering", "desc": "Full-stack product engineering with modern architectures, automated testing, and DevOps practices ensuring products that scale from hundreds to millions of users." },
+      { "title": "Product Modernization", "desc": "Strategic modernization of existing products to improve user experience, reduce technical debt, adopt modern architectures, and unlock new capabilities." },
+      { "title": "Product Launch & Growth", "desc": "Go-to-market strategy, launch planning, performance tracking, and continuous product optimization to drive adoption, retention, and revenue growth." }
+    ],
+    "features": ["Product-led growth methodology", "Design thinking practitioners", "Full-stack engineering teams", "Agile product development", "50+ products launched"],
+    "businessValue": "Achieve 3x faster time-to-market for new products, reduce product development costs by 40%, and increase user adoption rates by 60%."
+  },
+  {
+    "slug": "it-staffing",
+    "title": "IT Staffing",
+    "icon": "Users",
+    "kicker": "10",
+    "shortDesc": "Strategic IT staffing solutions that provide access to pre-vetted, enterprise-ready technology talent on demand.",
+    "heroDesc": "We connect enterprises with the technology talent they need to execute critical initiatives. Our IT staffing solutions span contract staffing, direct placement, managed teams, and project-based resourcing — all delivered through a rigorous vetting and matching process.",
+    "sections": [
+      { "title": "Contract & Temporary Staffing", "desc": "Flexible, short-term to long-term contract staffing for project-based needs, seasonal demand, and specialized skill requirements across all technology domains." },
+      { "title": "Direct Hire & Permanent Placement", "desc": "Comprehensive permanent recruitment services with deep technical sourcing, rigorous assessment, and cultural fit evaluation for full-time technology roles." },
+      { "title": "Managed Teams & PODs", "desc": "Dedicated, fully managed engineering teams that integrate seamlessly with your organization — including team leads, technical architects, and delivery management." },
+      { "title": "Executive & Leadership Search", "desc": "Specialized executive recruitment for CTO, VP Engineering, CIO, and other technology leadership positions with industry-specific networks." },
+      { "title": "RPO & MSP Solutions", "desc": "Recruitment process outsourcing and managed service provider solutions that scale your talent acquisition capabilities without adding overhead." },
+      { "title": "Global Sourcing & Immigration", "desc": "International talent sourcing with comprehensive visa sponsorship, immigration management, and global mobility support including H-1B, L-1, and Green Card processing." }
+    ],
+    "features": ["500+ technology professionals placed", "Rigorous technical vetting process", "Multi-domain expertise", "Global talent network", "Fast placement guarantee"],
+    "businessValue": "Reduce time-to-hire by 50%, improve candidate quality through technical vetting, and scale teams flexibly to meet changing business demands."
+  }
+]

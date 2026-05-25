@@ -25,49 +25,58 @@ const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
 });
 
-const BASE_URL = "https://www.hansolutions.com";
+import { COMPANY } from "@/lib/constants";
+
+const BASE_URL = COMPANY.domain;
 
 export const metadata: Metadata = {
   metadataBase: new URL(BASE_URL),
   title: {
-    default: "Han Solutions | Empowering Your Businesses",
-    template: "%s · Han Solutions",
+    default: "Manne Technologies | Global Technology Consulting & Product Engineering",
+    template: "%s · Manne Technologies",
   },
   description:
-    "Han Solutions is a forward-thinking technology partner delivering innovative IT solutions, elite staffing, and digital transformation from Austin, Texas. Cloud, AI, cybersecurity & more.",
+    COMPANY.description,
   keywords: [
-    "Han Solutions",
+    "Manne Technologies",
+    "technology consulting",
+    "IT services",
     "software development",
-    "IT staffing",
-    "cloud computing",
-    "AI",
-    "machine learning",
-    "data analytics",
-    "cyber security",
-    "IT consulting",
-    "Austin TX",
-    "managed IT services",
-    "DevOps",
-    "enterprise solutions",
+    "SAP solutions",
+    "SAP consulting",
     "digital transformation",
+    "cloud services",
+    "cloud migration",
+    "AI",
+    "artificial intelligence",
+    "machine learning",
+    "automation",
+    "cybersecurity",
+    "managed services",
+    "product development",
+    "IT staffing",
+    "enterprise technology",
+    "Austin TX",
+    "global IT consulting",
+    "Fortune 500 technology partner",
   ],
-  authors: [{ name: "HAN Solutions LLC" }],
-  creator: "HAN Solutions LLC",
-  publisher: "HAN Solutions LLC",
+  authors: [{ name: COMPANY.legal }],
+  creator: COMPANY.legal,
+  publisher: COMPANY.legal,
   openGraph: {
     type: "website",
     locale: "en_US",
     url: BASE_URL,
-    siteName: "Han Solutions",
-    title: "Han Solutions | Empowering Your Businesses",
+    siteName: COMPANY.name,
+    title: "Manne Technologies | Global Technology Consulting & Product Engineering",
     description:
-      "A technology partner for ambitious businesses — building software, placing talent, driving transformation.",
+      COMPANY.shortDescription,
   },
   twitter: {
     card: "summary_large_image",
-    title: "Han Solutions | Empowering Your Businesses",
+    title: "Manne Technologies | Global Technology Consulting & Product Engineering",
     description:
-      "A technology partner for ambitious businesses — building software, placing talent, driving transformation.",
+      COMPANY.shortDescription,
   },
   robots: {
     index: true,
@@ -94,10 +103,9 @@ const jsonLd = {
     {
       "@type": "Organization",
       "@id": `${BASE_URL}/#organization`,
-      name: "HAN Solutions LLC",
+      name: COMPANY.legal,
       url: BASE_URL,
-      description:
-        "HAN Solutions LLC delivers innovative IT solutions, elite staffing, and digital transformation services.",
+      description: COMPANY.description,
       address: {
         "@type": "PostalAddress",
         streetAddress: "5900 Balcones Drive # 31015",
@@ -108,20 +116,21 @@ const jsonLd = {
       },
       contactPoint: {
         "@type": "ContactPoint",
-        telephone: "+1-214-204-8813",
+        telephone: COMPANY.phoneHref,
         contactType: "customer service",
-        email: "hr@hanitsolutions.com",
+        email: COMPANY.email,
         availableLanguage: "English",
       },
-      foundingDate: "2021",
+      foundingDate: COMPANY.founded,
+      numberOfEmployees: COMPANY.employees,
     },
     {
-      "@type": "LocalBusiness",
-      "@id": `${BASE_URL}/#localbusiness`,
-      name: "HAN Solutions LLC",
+      "@type": "ProfessionalService",
+      "@id": `${BASE_URL}/#service`,
+      name: COMPANY.name,
       url: BASE_URL,
-      telephone: "+1-214-204-8813",
-      email: "hr@hanitsolutions.com",
+      telephone: COMPANY.phoneHref,
+      email: COMPANY.email,
       address: {
         "@type": "PostalAddress",
         streetAddress: "5900 Balcones Drive # 31015",
@@ -132,8 +141,8 @@ const jsonLd = {
       },
       geo: {
         "@type": "GeoCoordinates",
-        latitude: 30.3496,
-        longitude: -97.7482,
+        latitude: COMPANY.mapCoords.lat,
+        longitude: COMPANY.mapCoords.lng,
       },
       openingHoursSpecification: {
         "@type": "OpeningHoursSpecification",
@@ -141,7 +150,7 @@ const jsonLd = {
         opens: "09:00",
         closes: "18:00",
       },
-      priceRange: "$$",
+      priceRange: "$$$",
     },
   ],
 };
@@ -159,7 +168,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="bg-cream text-charcoal antialiased">
+      <body className="bg-surface antialiased">
         <div className="grain-overlay" aria-hidden="true" />
         <SmoothScroll>
           <Header />

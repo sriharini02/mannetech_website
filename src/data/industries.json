@@ -1,0 +1,50 @@
+[
+  {
+    "id": "banking-finance",
+    "title": "Banking & Financial Services",
+    "icon": "Landmark",
+    "description": "Secure, compliant digital transformation for financial institutions. We deliver core banking modernization, regulatory technology solutions, fraud detection systems, and cloud migration for banks, insurance firms, and fintech companies — all while maintaining the highest standards of security and compliance.",
+    "outcomes": ["40% faster product launch cycles", "60% reduction in compliance reporting time", "99.99% transaction uptime", "35% operational cost reduction"],
+    "useCases": ["Core Banking Modernization", "Regulatory Compliance Automation", "Real-time Fraud Detection", "Digital Lending Platforms"]
+  },
+  {
+    "id": "healthcare-life-sciences",
+    "title": "Healthcare & Life Sciences",
+    "icon": "HeartPulse",
+    "description": "Technology solutions that improve patient outcomes and operational efficiency. From HIPAA-compliant cloud infrastructure to AI-powered diagnostics platforms and interoperable health information systems, we help healthcare organizations deliver better care at lower cost.",
+    "outcomes": ["50% faster patient data access", "35% reduction in administrative costs", "Improved clinical decision support", "HIPAA/GDPR compliance assurance"],
+    "useCases": ["Electronic Health Records Integration", "Telemedicine Platforms", "Clinical Trial Management", "Population Health Analytics"]
+  },
+  {
+    "id": "manufacturing",
+    "title": "Manufacturing & Industrial",
+    "icon": "Factory",
+    "description": "Industry 4.0 transformation that connects factories, optimizes supply chains, and drives operational excellence. Our SAP and IoT expertise helps manufacturers achieve smart factory operations with real-time visibility and predictive maintenance.",
+    "outcomes": ["45% reduction in unplanned downtime", "30% supply chain cost optimization", "Real-time production visibility", "25% increase in overall equipment effectiveness"],
+    "useCases": ["SAP S/4HANA Implementation", "Industrial IoT Platforms", "Predictive Maintenance", "Supply Chain Control Towers"]
+  },
+  {
+    "id": "retail-cpg",
+    "title": "Retail & Consumer Goods",
+    "icon": "ShoppingBag",
+    "description": "Omnichannel commerce platforms, demand forecasting engines, and personalized customer experiences that drive revenue growth. We help retailers unify online and offline operations for a seamless customer journey.",
+    "outcomes": ["35% increase in online conversion", "50% improvement in inventory accuracy", "Personalized customer engagement at scale", "20% reduction in logistics costs"],
+    "useCases": ["Omnichannel Commerce Platforms", "Demand Forecasting AI", "Inventory Optimization", "Customer Data Platforms"]
+  },
+  {
+    "id": "energy-utilities",
+    "title": "Energy & Utilities",
+    "icon": "Zap",
+    "description": "Digital solutions for the energy transition. Smart grid platforms, renewable energy management systems, and enterprise asset management that help utility companies modernize infrastructure and achieve sustainability goals.",
+    "outcomes": ["30% improvement in grid reliability", "25% reduction in carbon footprint", "Real-time asset monitoring", "Regulatory compliance automation"],
+    "useCases": ["Smart Grid Management", "Renewable Energy Integration", "Asset Performance Management", "Sustainability Reporting"]
+  },
+  {
+    "id": "telecom-media",
+    "title": "Telecommunications & Media",
+    "icon": "Wifi",
+    "description": "Network modernization, 5G-ready infrastructure, and OSS/BSS transformation. We help telecom and media companies deliver next-generation connectivity and content experiences at scale.",
+    "outcomes": ["40% faster service activation", "25% reduction in network OPEX", "99.999% network reliability", "New revenue streams from 5G services"],
+    "useCases": ["5G Network Slicing Solutions", "BSS/OSS Modernization", "Customer Experience Platforms", "Content Delivery Optimization"]
+  }
+]

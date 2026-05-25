@@ -1,0 +1,42 @@
+[
+  {
+    "id": "manneops-platform",
+    "title": "ManneOps — Enterprise DevOps Platform",
+    "tagline": "Accelerate software delivery with intelligent automation",
+    "description": "A comprehensive DevOps platform that unifies CI/CD, infrastructure as code, observability, and security scanning into a single, integrated workflow. ManneOps reduces deployment cycles by 70% while improving code quality and team productivity.",
+    "benefits": ["70% faster deployment cycles", "Unified observability across stacks", "Built-in security & compliance gates", "Self-service developer portals", "Multi-cloud orchestration"],
+    "icon": "Workflow"
+  },
+  {
+    "id": "manneai-insights",
+    "title": "ManneAI — Enterprise AI/ML Platform",
+    "tagline": "Turn data into decisions with responsible AI",
+    "description": "An end-to-end machine learning platform that accelerates AI adoption from experimentation to production. Feature stores, MLOps pipelines, model monitoring, and explainable AI capabilities built for enterprise scale and governance.",
+    "benefits": ["10x faster model deployment", "Centralized feature management", "Automated model monitoring & retraining", "Explainable AI for regulatory compliance", "Multi-framework support"],
+    "icon": "Brain"
+  },
+  {
+    "id": "mannesecure",
+    "title": "ManneSecure — Cyber Defense Suite",
+    "tagline": "Proactive threat protection for modern enterprises",
+    "description": "A unified cybersecurity platform combining SIEM, SOAR, vulnerability management, and zero-trust network access. ManneSecure provides 24/7 threat detection, automated incident response, and comprehensive compliance reporting.",
+    "benefits": ["Real-time threat detection & response", "Automated incident remediation", "Zero-trust architecture implementation", "Comprehensive compliance dashboards", "24/7 managed security operations"],
+    "icon": "Shield"
+  },
+  {
+    "id": "mannecloud",
+    "title": "ManneCloud — Cloud Management Platform",
+    "tagline": "Optimize, govern, and scale your multi-cloud estate",
+    "description": "A cloud management and FinOps platform that provides unified visibility, cost optimization, governance, and automation across AWS, Azure, and GCP. Achieve 40% cloud cost reduction while improving security and compliance posture.",
+    "benefits": ["40% cloud cost reduction", "Unified multi-cloud governance", "Automated rightsizing & scheduling", "Security & compliance guardrails", "FinOps dashboards & forecasting"],
+    "icon": "Cloud"
+  },
+  {
+    "id": "mannetrack",
+    "title": "ManneTrack — Digital Experience Platform",
+    "tagline": "Deliver seamless omnichannel customer experiences",
+    "description": "A headless digital experience platform (DXP) that enables enterprises to deliver personalized, omnichannel customer journeys. Built on microservices architecture with AI-powered content personalization and real-time analytics.",
+    "benefits": ["Unified customer data across channels", "AI-powered content personalization", "Headless CMS for omnichannel delivery", "Real-time customer journey analytics", "Enterprise-grade security & scalability"],
+    "icon": "LayoutDashboard"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "quote": "Manne Technologies transformed our legacy infrastructure into a cloud-native platform that reduced operational costs by 38% while improving application performance by 60%. Their team's depth across cloud engineering and enterprise architecture was exceptional.",
+    "name": "James Mitchell",
+    "role": "Chief Technology Officer",
+    "company": "Aetna Financial Group"
+  },
+  {
+    "quote": "The SAP S/4HANA migration delivered by ManneTech was flawless — completed on time, under budget, with zero business disruption. Their understanding of our complex SAP landscape and manufacturing processes set them apart from every other partner we evaluated.",
+    "name": "Priya Sharma",
+    "role": "VP, Global IT Operations",
+    "company": "Meridian Manufacturing Corp"
+  },
+  {
+    "quote": "We engaged Manne Technologies for AI-driven process automation across our supply chain. Within six months, they delivered a 42% reduction in manual processing and identified $12M in annual efficiency gains. Truly transformative work.",
+    "name": "David Chen",
+    "role": "SVP, Digital Transformation",
+    "company": "Pacific Logistics Group"
+  },
+  {
+    "quote": "Their cybersecurity team conducted a comprehensive risk assessment and implemented a zero-trust architecture that exceeded our compliance requirements. ManneTech's proactive threat detection has prevented multiple sophisticated attacks.",
+    "name": "Dr. Sarah Okonkwo",
+    "role": "Chief Information Security Officer",
+    "company": "NexaBank Financial Services"
+  },
+  {
+    "quote": "Manne Technologies doesn't just deliver projects — they deliver business outcomes. Our digital transformation roadmap, co-created with their strategy team, has accelerated time-to-market by 4x and opened three new revenue channels.",
+    "name": "Michael Torres",
+    "role": "CEO",
+    "company": "Ventura Health Systems"
+  }
+]

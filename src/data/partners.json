@@ -1,0 +1,14 @@
+[
+  { "name": "Microsoft", "logo": "https://cdn.simpleicons.org/microsoft/0E3B4A", "tier": "gold" },
+  { "name": "SAP", "logo": "https://cdn.simpleicons.org/sap/0E3B4A", "tier": "platinum" },
+  { "name": "Amazon Web Services", "logo": "https://cdn.simpleicons.org/amazonwebservices/0E3B4A", "tier": "advanced" },
+  { "name": "Google Cloud", "logo": "https://cdn.simpleicons.org/googlecloud/0E3B4A", "tier": "partner" },
+  { "name": "Salesforce", "logo": "https://cdn.simpleicons.org/salesforce/0E3B4A", "tier": "silver" },
+  { "name": "Oracle", "logo": "https://cdn.simpleicons.org/oracle/0E3B4A", "tier": "gold" },
+  { "name": "ServiceNow", "logo": "https://cdn.simpleicons.org/servicenow/0E3B4A", "tier": "partner" },
+  { "name": "Atlassian", "logo": "https://cdn.simpleicons.org/atlassian/0E3B4A", "tier": "silver" },
+  { "name": "IBM", "logo": "https://cdn.simpleicons.org/ibm/0E3B4A", "tier": "gold" },
+  { "name": "Red Hat", "logo": "https://cdn.simpleicons.org/redhat/0E3B4A", "tier": "partner" },
+  { "name": "Dell Technologies", "logo": "https://cdn.simpleicons.org/dell/0E3B4A", "tier": "gold" },
+  { "name": "Cisco", "logo": "https://cdn.simpleicons.org/cisco/0E3B4A", "tier": "platinum" }
+]

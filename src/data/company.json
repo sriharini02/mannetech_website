@@ -1,0 +1,27 @@
+{
+  "name": "Manne Technologies",
+  "shortName": "ManneTech",
+  "legal": "Manne Technologies LLC",
+  "tagline": "Engineering Digital Futures",
+  "description": "Manne Technologies is a premier global technology consulting and product engineering company that partners with enterprises to accelerate digital transformation, optimize operations, and drive measurable business outcomes. From strategy through execution, we deliver innovative IT services, SAP solutions, cloud engineering, AI & automation, cybersecurity, managed services, and IT staffing that power the world's most ambitious organizations.",
+  "shortDescription": "Global technology consulting and product engineering partner delivering enterprise IT services, SAP solutions, cloud transformation, AI, cybersecurity, and talent solutions that drive business growth.",
+  "heroTitle": "Engineering Digital",
+  "heroSubtitle": "Futures",
+  "heroTagline": "Global technology consulting partner for enterprises seeking innovation, scale, and measurable business outcomes.",
+  "address": "5900 Balcones Drive # 31015, Austin, TX 78731",
+  "phone": "+1 (214) 204-8813",
+  "phoneHref": "+12142048813",
+  "email": "contact@mannetechnologies.com",
+  "hours": "Mon–Fri · 9 AM – 6 PM CST",
+  "domain": "https://www.mannetechnologies.com",
+  "founded": "2021",
+  "employees": "500+",
+  "clients": "200+",
+  "countries": "12",
+  "mapCoords": { "lat": 30.3496, "lng": -97.7482 },
+  "social": {
+    "linkedin": "https://linkedin.com/company/mannetechnologies",
+    "twitter": "https://twitter.com/mannetech",
+    "instagram": "https://instagram.com/mannetechnologies"
+  }
+}

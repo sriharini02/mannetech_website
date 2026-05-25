@@ -20,12 +20,12 @@ function wrapTemplate(title: string, content: string) {
   return `
     <div style="font-family: -apple-system, 'Segoe UI', sans-serif; max-width: 600px; margin: 0 auto; color: #0F1419;">
       <div style="border-bottom: 4px solid ${GOLD}; padding-bottom: 12px; margin-bottom: 20px;">
-        <p style="margin: 0; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: ${INK};">Han Solutions</p>
+        <p style="margin: 0; font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase; color: ${INK};">Manne Technologies</p>
         <h2 style="margin: 8px 0 0; color: ${INK}; font-weight: 500; font-size: 24px;">${title}</h2>
       </div>
       ${content}
       <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #E3DCCB; font-size: 11px; color: #5A6677;">
-        <p style="margin: 0;">This message was sent via hansolutions.com</p>
+        <p style="margin: 0;">This message was sent via mannetechnologies.com</p>
       </div>
     </div>
   `;

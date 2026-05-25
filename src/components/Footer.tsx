@@ -2,44 +2,43 @@
 
 import Link from "next/link";
 import { ArrowUpRight, Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from "lucide-react";
-import Image from "next/image";
 import Reveal from "./Reveal";
-import { COMPANY, SERVICES } from "@/lib/constants";
+import { COMPANY, SERVICES, INDUSTRIES } from "@/lib/constants";
 
 export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-ink text-ivory relative overflow-hidden">
-      {/* Ambient gold gradient glow */}
-      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-gold/10 blur-[120px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-0 -left-40 w-[400px] h-[400px] bg-gold/5 blur-[100px] rounded-full pointer-events-none" />
+    <footer className="bg-navy relative overflow-hidden">
+      {/* Ambient accent gradient glow */}
+      <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-accent/10 blur-[120px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-0 -left-40 w-[400px] h-[400px] bg-accent/5 blur-[100px] rounded-full pointer-events-none" />
 
       {/* CTA Banner */}
-      <section className="relative wrap py-24 md:py-32 border-b border-ivory/10">
+      <section className="relative wrap py-16 sm:py-20 md:py-24 lg:py-32 border-b border-white/10">
         <Reveal>
-          <p className="eyebrow text-gold mb-6 flex items-center">
-            <span className="w-2 h-2 bg-gold rounded-full mr-3" />
-            Let's build something lasting
-          </p>
+          <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-ivory font-mono text-[0.6rem] sm:text-[0.65rem] tracking-wider uppercase mb-4 sm:mb-6">
+            <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent rounded-full mr-2 sm:mr-2.5 shrink-0" />
+            <span>Let's engineer your digital future</span>
+          </span>
         </Reveal>
 
-        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_auto] gap-10 lg:gap-16 items-end">
+        <div className="grid grid-cols-1 lg:grid-cols-[1.2fr_auto] gap-6 sm:gap-10 lg:gap-16 items-end">
           <Reveal animation="fade-up" delay={0.1}>
-            <h2 className="display-serif text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-ivory">
-              Ready to begin
+            <h2 className="display-serif text-4xl sm:text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight text-white">
+              Ready to transform
               <br />
-              the <em className="text-gold">next chapter?</em>
+              your <em className="text-accent">enterprise?</em>
             </h2>
           </Reveal>
 
           <Reveal animation="fade-up" delay={0.2}>
-            <div className="flex flex-col gap-4 md:items-end">
-              <Link href="/contact" className="btn-primary bg-gold border-gold text-ink hover:text-ink">
-                <span>Contact Us</span>
+            <div className="flex flex-col gap-3 sm:gap-4 md:items-end">
+              <Link href="/contact" className="btn-primary justify-center sm:justify-start text-sm sm:text-base">
+                <span>Start a conversation</span>
                 <ArrowUpRight className="w-4 h-4 btn-arrow" strokeWidth={2} />
               </Link>
-              <Link href="/book-appointment" className="text-ivory/70 hover:text-gold text-sm transition-colors">
+              <Link href="/book-appointment" className="text-white/70 hover:text-accent text-sm transition-colors">
                 or schedule a discovery call →
               </Link>
             </div>
@@ -48,26 +47,19 @@ export default function Footer() {
       </section>
 
       {/* Main Footer */}
-      <section className="relative wrap py-16 md:py-20">
-        <div className="grid grid-cols-2 md:grid-cols-12 gap-10 md:gap-6">
+      <section className="relative wrap py-12 sm:py-16 md:py-20">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 md:gap-6">
           {/* Brand */}
-          <div className="col-span-2 md:col-span-4 pr-6">
-            <Link href="/" className="inline-flex items-center gap-3 group mb-6">
-              <Image
-              src="/favicon.png"
-              alt="Han Solutions mark"
-              width={503}
-              height={496}
-              className="w-20 h-20 mt-10"
-            />
-              {/* <div className="leading-none">
-                <p className="font-display text-xl font-semibold">Han</p>
-                <p className="font-mono text-[10px] tracking-[0.22em] text-ivory/60 uppercase mt-0.5">
-                  Solutions
+          <div className="sm:col-span-2 lg:col-span-4">
+            <Link href="/" className="inline-flex items-center gap-3 group mb-4 sm:mb-6">
+              <div className="leading-none">
+                <p className="font-display text-xl sm:text-2xl font-semibold text-white">Manne</p>
+                <p className="font-mono text-[10px] tracking-[0.22em] text-accent uppercase mt-0.5">
+                  Technologies
                 </p>
-              </div> */}
+              </div>
             </Link>
-            <p className="text-ivory/60 text-sm leading-relaxed max-w-xs mb-8">
+            <p className="text-text-secondary text-sm leading-relaxed max-w-xs mb-6 sm:mb-8">
               {COMPANY.shortDescription}
             </p>
             <div className="flex gap-2">
@@ -80,7 +72,7 @@ export default function Footer() {
                   key={label}
                   href={href}
                   aria-label={label}
-                  className="w-10 h-10 rounded-full border border-ivory/15 flex items-center justify-center text-ivory/60 hover:text-ink hover:bg-gold hover:border-gold transition-all duration-300"
+                  className="w-10 h-10 rounded-full border border-white/15 flex items-center justify-center text-white/60 hover:text-primary hover:bg-accent hover:border-accent transition-all duration-300"
                 >
                   <Icon className="w-4 h-4" />
                 </a>
@@ -89,87 +81,104 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div className="md:col-span-3">
-            <p className="eyebrow text-gold mb-5">Services</p>
-            <ul className="space-y-2.5">
+          <div className="lg:col-span-2">
+            <p className="eyebrow text-accent mb-3 sm:mb-5">Services</p>
+            <ul className="space-y-2 sm:space-y-2.5">
               {SERVICES.slice(0, 6).map((s) => (
                 <li key={s.slug}>
                   <Link
                     href={`/services/${s.slug}`}
-                    className="text-sm text-ivory/70 hover:text-gold transition-colors"
+                    className="text-sm text-ivory/70 hover:text-gold transition-colors block py-0.5"
                   >
                     {s.title}
                   </Link>
                 </li>
               ))}
               <li>
-                <Link href="/services" className="text-sm text-gold hover:text-gold-soft transition-colors">
+                <Link href="/services" className="text-sm text-accent hover:text-accent-light transition-colors block py-0.5">
                   View all →
                 </Link>
               </li>
             </ul>
           </div>
 
+          {/* Industries */}
+          <div className="lg:col-span-2">
+            <p className="eyebrow text-accent mb-3 sm:mb-5">Industries</p>
+            <ul className="space-y-2 sm:space-y-2.5">
+              {INDUSTRIES.slice(0, 5).map((ind) => (
+                <li key={ind.id}>
+                  <Link
+                    href="/industries"
+                    className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5"
+                  >
+                    {ind.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
           {/* Company */}
-          <div className="md:col-span-2">
-            <p className="eyebrow text-gold mb-5">Company</p>
-            <ul className="space-y-2.5">
-              <li><Link href="/about" className="text-sm text-ivory/70 hover:text-gold transition-colors">About</Link></li>
-              <li><Link href="/it-staffing" className="text-sm text-ivory/70 hover:text-gold transition-colors">IT Staffing</Link></li>
-              <li><Link href="/careers" className="text-sm text-ivory/70 hover:text-gold transition-colors">Careers</Link></li>
-              <li><Link href="/book-appointment" className="text-sm text-ivory/70 hover:text-gold transition-colors">Book a Call</Link></li>
-              <li><Link href="/contact" className="text-sm text-ivory/70 hover:text-gold transition-colors">Contact</Link></li>
+          <div className="lg:col-span-1">
+            <p className="eyebrow text-accent mb-3 sm:mb-5">Company</p>
+            <ul className="space-y-2 sm:space-y-2.5">
+              <li><Link href="/about" className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5">About</Link></li>
+              <li><Link href="/services" className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5">Services</Link></li>
+              <li><Link href="/careers" className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5">Careers</Link></li>
+              <li><Link href="/book-appointment" className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5">Book a Call</Link></li>
+              <li><Link href="/contact" className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
-          <div className="md:col-span-3">
-            <p className="eyebrow text-gold mb-5">Visit / Write</p>
-            <ul className="space-y-4">
+          <div className="sm:col-span-2 lg:col-span-3">
+            <p className="eyebrow text-accent mb-3 sm:mb-5">Visit / Write</p>
+            <ul className="space-y-3 sm:space-y-4">
               <li className="flex items-start gap-3">
-                <MapPin className="w-4 h-4 text-gold mt-0.5 shrink-0" />
-                <span className="text-sm text-ivory/70">{COMPANY.address}</span>
+                <MapPin className="w-4 h-4 text-accent mt-0.5 shrink-0" />
+                <span className="text-sm text-text-secondary">{COMPANY.address}</span>
               </li>
               <li className="flex items-center gap-3">
-                <Phone className="w-4 h-4 text-gold shrink-0" />
-                <a href={`tel:${COMPANY.phoneHref}`} className="text-sm text-ivory/70 hover:text-gold transition-colors">
+                <Phone className="w-4 h-4 text-accent shrink-0" />
+                <a href={`tel:${COMPANY.phoneHref}`} className="text-sm text-text-secondary hover:text-accent transition-colors">
                   {COMPANY.phone}
                 </a>
               </li>
               <li className="flex items-center gap-3">
-                <Mail className="w-4 h-4 text-gold shrink-0" />
-                <a href={`mailto:${COMPANY.email}`} className="text-sm text-ivory/70 hover:text-gold transition-colors">
+                <Mail className="w-4 h-4 text-accent shrink-0" />
+                <a href={`mailto:${COMPANY.email}`} className="text-sm text-text-secondary hover:text-accent transition-colors break-all">
                   {COMPANY.email}
                 </a>
               </li>
             </ul>
-            <p className="eyebrow text-gold mt-8 mb-3">Hours</p>
-            <p className="text-sm text-ivory/70">{COMPANY.hours}</p>
+            <p className="eyebrow text-accent mt-6 sm:mt-8 mb-3">Hours</p>
+            <p className="text-sm text-text-secondary">{COMPANY.hours}</p>
           </div>
         </div>
       </section>
 
       {/* Oversized wordmark */}
-      <section className="relative wrap pb-4 pointer-events-none select-none">
-        <p className="display-serif text-[18vw] leading-none tracking-tighter text-ivory/[0.04] font-semibold -mb-2 whitespace-nowrap">
-          HAN SOLUTIONS
+      <section className="relative wrap pb-2 sm:pb-4 pointer-events-none select-none overflow-hidden">
+        <p className="display-serif text-[20vw] sm:text-[18vw] leading-none tracking-tighter text-white/[0.04] font-semibold whitespace-nowrap">
+          MANNE TECHNOLOGIES
         </p>
       </section>
 
       {/* Bottom bar */}
-      <section className="relative border-t border-ivory/10">
-        <div className="wrap py-6 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-xs text-ivory/40">
+      <section className="relative border-t border-white/10">
+        <div className="wrap py-4 sm:py-6 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+          <p className="text-xs text-white/60 text-center sm:text-left">
             © {year} {COMPANY.legal}. All rights reserved.
           </p>
-          <div className="flex items-center gap-6">
-            <Link href="/privacy-policy" className="text-xs text-ivory/40 hover:text-gold transition-colors">
+          <div className="flex items-center gap-4 sm:gap-6">
+            <Link href="/privacy-policy" className="text-xs text-white/60 hover:text-accent transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/terms-of-service" className="text-xs text-ivory/40 hover:text-gold transition-colors">
+            <Link href="/terms-of-service" className="text-xs text-white/60 hover:text-accent transition-colors">
               Terms of Service
             </Link>
-            <span className="text-xs text-ivory/30 font-mono">v1.0</span>
+            <span className="text-xs text-white/50 font-mono">v1.0</span>
           </div>
         </div>
       </section>

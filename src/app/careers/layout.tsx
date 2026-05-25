@@ -1,16 +1,16 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Careers",
+  title: "Careers at Manne Technologies | Join Our Global Team",
   description:
-    "Join HAN Solutions LLC. Explore open positions in software development, QA engineering, DevOps, and more. Remote-first culture with competitive compensation.",
+    "Explore career opportunities at Manne Technologies. Join 500+ technology professionals delivering enterprise-scale solutions in consulting, engineering, AI, cloud, cybersecurity, and SAP.",
   openGraph: {
-    title: "Careers · Han Solutions",
+    title: "Careers · Manne Technologies",
     description:
-      "Build your career with Han. Remote-first, competitive compensation, cutting-edge technology.",
+      "Join Manne Technologies — a global technology consulting firm. Remote-first, competitive compensation, cutting-edge enterprise projects.",
   },
   alternates: {
-    canonical: "https://www.hansolutions.com/careers",
+    canonical: "https://www.mannetechnologies.com/careers",
   },
 };
 
