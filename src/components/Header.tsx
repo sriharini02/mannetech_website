@@ -164,6 +164,13 @@ export default function Header() {
 
             <div className="flex items-center gap-2 sm:gap-3">
               <Link
+                href="/apply"
+                className="hidden lg:inline-flex btn-ghost text-sm"
+              >
+                <span>Apply Now</span>
+                <ArrowUpRight className="w-3.5 h-3.5 btn-arrow" strokeWidth={2} />
+              </Link>
+              <Link
                 href="/contact"
                 className="hidden lg:inline-flex btn-primary text-sm"
               >

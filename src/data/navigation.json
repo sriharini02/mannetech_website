@@ -1,6 +1,6 @@
 [
   { "label": "About", "href": "/about" },
   { "label": "Services", "href": "/services" },
-  { "label": "Careers", "href": "/careers" },
-  { "label": "Contact", "href": "/contact" }
+  { "label": "Case Studies", "href": "/case-studies" },
+  { "label": "Careers", "href": "/careers" }
 ]

@@ -18,14 +18,14 @@ export default function AboutPage() {
       <section className="relative pt-28 sm:pt-40 pb-16 sm:pb-24 md:pt-48 md:pb-32 overflow-hidden bg-hero-gradient">
         <div className="wrap relative">
           <Reveal animation="fade-up">
-            <Link href="/" className="eyebrow inline-flex items-center gap-1.5 sm:gap-2 mb-6 sm:mb-10 hover:text-ivory transition-colors text-[1rem] sm:text-[1rem]">
+            <Link href="/" className="eyebrow inline-flex items-center gap-1.5 sm:gap-2 mb-6 sm:mb-10 hover:text-ivory transition-colors text-[1rem] sm:text-[rem]">
               <span>Home</span>
               <span>/</span>
               <span className="eyebrow-ink">About</span>
             </Link>
           </Reveal>
 
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-16 items-end">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-16 items-center">
             <div className="lg:col-span-8">
               <RevealText
                 as="h1"
@@ -68,32 +68,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ══════════════════════ FEATURED IMAGE ══════════════════════ */}
-      <section className="relative pb-16 sm:pb-24 md:pb-32">
-        <div className="wrap">
-          <Reveal animation="scale">
-            <ParallaxImage amount={40} className="aspect-[21/9] w-full max-h-[50vh]">
-              <Image
-                src={PAGE_IMAGES.aboutHero}
-                alt="Manne Technologies — enterprise technology consulting"
-                fill
-                className="object-cover"
-                priority
-                sizes="100vw"
-              />
-            </ParallaxImage>
-          </Reveal>
-          <div className="flex items-start justify-between mt-3 sm:mt-4">
-            <p className="font-mono text-[8px] sm:text-[10px] tracking-widest uppercase text-graphite text-ink/50">
-              [ GLOBAL HEADQUARTERS · AUSTIN, TX · EST. {COMPANY.founded} ]
-            </p>
-            <p className="font-mono text-[8px] sm:text-[10px] tracking-widest uppercase text-graphite text-ink/50 hidden sm:block">
-              FIG. 01
-            </p>
-          </div>
-        </div>
-      </section>
-
+      
       {/* ══════════════════════ MISSION ══════════════════════ */}
       <section className="relative py-16 sm:py-24 md:py-36 border-y border-border bg-card">
         <div className="wrap grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 lg:gap-16">
@@ -121,11 +96,11 @@ export default function AboutPage() {
             ))}
 
             <Reveal animation="fade-up" delay={0.4}>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 mt-6 sm:mt-10 border-t border-border">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 mt-6 sm:mt-10 border-t border-r border-border">
                 {pA.stats.map((item, i) => (
                   <div
                     key={i}
-                    className="py-4 sm:py-6 border-r border-border last:border-r-0 pr-2 sm:pr-3"
+                    className="py-4 sm:py-6 px-3 sm:px-4 text-center border-r border-border last:border-r-0"
                   >
                     <p className="display-serif text-2xl sm:text-3xl md:text-4xl text-ink font-semibold leading-none mb-2 sm:mb-3">
                       {item.number}
@@ -195,11 +170,7 @@ export default function AboutPage() {
               </h2>
             </Reveal>
 
-            <Reveal animation="fade-up" delay={0.15} className="lg:col-span-5 lg:col-start-8">
-              <p className="text-ink/60 text-base sm:text-lg leading-relaxed font-light">
-                A five-principle methodology applied rigorously on every engagement. It is not glamorous. It is <em className="italic">effective</em>.
-              </p>
-            </Reveal>
+            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-border">
@@ -211,7 +182,7 @@ export default function AboutPage() {
                       {p.number}
                     </span>
                     <span className="font-mono text-[8px] sm:text-[10px] tracking-widest uppercase text-graphite text-ink/50">
-                      0{i + 1} / 05
+                      0{i + 1} / 06
                     </span>
                   </div>
                   <h3 className="display-serif text-lg sm:text-2xl md:text-3xl text-ink mb-2 sm:mb-3 font-normal leading-tight">
@@ -299,7 +270,7 @@ export default function AboutPage() {
           </Reveal>
 
           <Reveal animation="fade-up" delay={0.2} className="lg:col-span-5 lg:col-start-8">
-            <ParallaxImage amount={30} className="aspect-[4/5] frame-inset max-w-md mx-auto lg:mx-0">
+            <ParallaxImage amount={30} className="aspect-[3/2] frame-inset max-w-md mx-auto lg:mx-0">
               <Image
                 src={PAGE_IMAGES.aboutTeam}
                 alt="Manne Technologies team"

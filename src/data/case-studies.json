@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "Case Studies | Manne Technologies",
+    "description": "Discover how Manne Technologies delivers enterprise software solutions, SAP transformation, product engineering, workflow automation, and digital innovation that drive measurable business results.",
+    "keywords": ["Enterprise Software Development", "SAP Solutions", "Product Engineering", "Digital Transformation", "Workflow Automation", "IT Services", "Case Studies", "Business Technology Solutions"]
+  },
+  "hero": {
+    "eyebrow": "CASE STUDIES",
+    "headline": "Building Technology That Creates",
+    "emphasis": "Business Impact.",
+    "description": "From enterprise software platforms and SAP solutions to workflow automation and digital transformation initiatives, explore how Manne Technologies helps organizations solve complex challenges and accelerate growth through technology.",
+    "primaryCta": "Schedule a Consultation",
+    "primaryHref": "/book-appointment",
+    "secondaryCta": "Explore Our Services",
+    "secondaryHref": "/services"
+  },
+  "stats": [
+    { "number": "50+", "label": "Projects Delivered", "sub": "across industries" },
+    { "number": "20+", "label": "Enterprise Clients", "sub": "globally served" },
+    { "number": "95%", "label": "Client Retention", "sub": "year-over-year" },
+    { "number": "99.9%", "label": "Platform Availability", "sub": "SLA guarantee" }
+  ],
+  "intro": {
+    "heading": "Real Challenges. Practical Solutions. Measurable Results.",
+    "paragraphs": [
+      "Every organization faces unique operational, technological, and growth challenges. At Manne Technologies, we partner with businesses to design, develop, and implement solutions that improve efficiency, increase visibility, reduce operational complexity, and support long-term scalability.",
+      "Our experience spans custom software development, SAP implementation, digital transformation, cloud modernization, workflow automation, enterprise integrations, and business productivity solutions."
+    ]
+  },
+  "caseStudies": [
+    {
+      "id": "digital-operations-platform",
+      "category": "Enterprise Product Engineering",
+      "title": "Digital Operations Management Platform",
+      "description": "A growing enterprise struggled with fragmented workflows, disconnected reporting systems, and inefficient operational processes spread across multiple departments. Our team designed and developed a centralized cloud-based operations platform that unified project management, workflow tracking, reporting, document management, and executive dashboards into a single ecosystem.",
+      "outcomes": [
+        "65% reduction in manual processes",
+        "40% improvement in operational efficiency",
+        "Real-time visibility across departments",
+        "Faster decision-making through analytics"
+      ],
+      "technologies": ["React", "Next.js", "Node.js", "PostgreSQL", "AWS"]
+    },
+    {
+      "id": "enterprise-process-optimization",
+      "category": "SAP Transformation",
+      "title": "Enterprise Process Optimization Initiative",
+      "description": "A large organization needed to streamline business processes, improve reporting accuracy, and modernize internal operations through enterprise technology. Manne Technologies implemented SAP-driven process improvements, automated reporting workflows, integrated departmental systems, and established centralized business intelligence capabilities.",
+      "outcomes": [
+        "50% reduction in process bottlenecks",
+        "Improved reporting accuracy",
+        "Increased operational transparency",
+        "Enhanced cross-functional collaboration"
+      ],
+      "technologies": ["SAP S/4HANA", "SAP Fiori", "SAP Analytics Cloud", "Enterprise Integrations"]
+    },
+    {
+      "id": "self-service-customer-portal",
+      "category": "Customer Experience Solutions",
+      "title": "Intelligent Self-Service Customer Portal",
+      "description": "Customer service teams were overwhelmed with repetitive requests and lacked a scalable support platform. We developed a secure self-service portal enabling customers to manage accounts, submit requests, track support tickets, access knowledge resources, and receive real-time updates.",
+      "outcomes": [
+        "70% reduction in repetitive support requests",
+        "Faster issue resolution",
+        "Improved customer satisfaction",
+        "Reduced support costs"
+      ],
+      "technologies": ["Next.js", "TypeScript", "Node.js", "MongoDB", "Azure"]
+    },
+    {
+      "id": "automated-business-process-suite",
+      "category": "Business Workflow Automation",
+      "title": "Automated Business Process Suite",
+      "description": "Manual approvals, reporting activities, and repetitive administrative tasks created inefficiencies throughout the organization. Manne Technologies developed an automation framework that streamlined approvals, notifications, reporting workflows, task routing, and operational monitoring.",
+      "outcomes": [
+        "80% reduction in manual approvals",
+        "Increased employee productivity",
+        "Faster processing times",
+        "Better operational visibility"
+      ],
+      "technologies": ["React", "FastAPI", "PostgreSQL", "Docker"]
+    }
+  ],
+  "industries": {
+    "heading": "Industries We Empower",
+    "description": "Our solutions are designed to address industry-specific challenges while remaining scalable, secure, and future-ready.",
+    "items": [
+      "Manufacturing",
+      "Healthcare",
+      "Financial Services",
+      "Retail",
+      "Logistics",
+      "Technology",
+      "Education",
+      "Professional Services"
+    ]
+  },
+  "whyUs": {
+    "eyebrow": "Why Manne Technologies",
+    "heading": "Why Organizations Choose",
+    "emphasis": "Manne Technologies",
+    "reasons": [
+      { "title": "Enterprise Expertise", "desc": "Deep experience delivering enterprise-grade software solutions and technology consulting." },
+      { "title": "Scalable Architecture", "desc": "Solutions designed for growth, performance, and future expansion." },
+      { "title": "Business-Centric Approach", "desc": "Technology strategies aligned with measurable business objectives." },
+      { "title": "End-to-End Delivery", "desc": "From discovery and architecture to deployment and support." },
+      { "title": "Transparent Collaboration", "desc": "Clear communication, milestone visibility, and stakeholder alignment." },
+      { "title": "Long-Term Partnership", "desc": "Ongoing support, optimization, and continuous improvement." }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Start Your Journey",
+    "heading": "Ready To Create Your",
+    "emphasis": "Success Story?",
+    "description": "Whether you're modernizing legacy systems, implementing enterprise platforms, developing custom software, or accelerating digital transformation, Manne Technologies is ready to help you move forward with confidence.",
+    "primaryCta": "Contact Us",
+    "primaryHref": "/contact",
+    "secondaryCta": "Schedule Consultation",
+    "secondaryHref": "/book-appointment"
+  }
+}

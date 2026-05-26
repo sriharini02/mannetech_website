@@ -12,6 +12,7 @@ import staffingData from "@/data/staffing.json";
 import faqData from "@/data/faq.json";
 import imagesData from "@/data/images.json";
 import pagesData from "@/data/pages.json";
+import caseStudiesData from "@/data/case-studies.json";
 
 export const COMPANY = companyData;
 export const NAV_LINKS = navData;
@@ -27,6 +28,7 @@ export const STAFFING_SERVICES = staffingData;
 export const FAQ = faqData;
 export const PAGE_IMAGES = imagesData;
 export const PAGES = pagesData;
+export const CASE_STUDIES = caseStudiesData;
 
 export const CAPABILITIES = pagesData.home.capabilities;
 

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { ArrowUpRight, Mail, Phone, MapPin, Linkedin, Twitter, Instagram } from "lucide-react";
 import Reveal from "./Reveal";
-import { COMPANY, SERVICES, INDUSTRIES } from "@/lib/constants";
+import { COMPANY, SERVICES } from "@/lib/constants";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -37,11 +37,16 @@ export default function Footer() {
               <Link href="/contact" className="btn-primary justify-center sm:justify-start text-sm sm:text-base">
                 <span>Start a conversation</span>
                 <ArrowUpRight className="w-4 h-4 btn-arrow" strokeWidth={2} />
-              </Link>
-              <Link href="/book-appointment" className="text-white/70 hover:text-accent text-sm transition-colors">
-                or schedule a discovery call →
-              </Link>
-            </div>
+                  </Link>
+           
+                        <Link
+                              href="/book-appointment"
+                              className="hidden lg:inline-flex btn-ghost text-sm"
+                            >
+                              <span>Schedule a Discovery Call</span>
+                              <ArrowUpRight className="w-3.5 h-3.5 btn-arrow" strokeWidth={2} />
+                            </Link>
+             </div>
           </Reveal>
         </div>
       </section>
@@ -102,25 +107,8 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Industries */}
-          <div className="lg:col-span-2">
-            <p className="eyebrow text-accent mb-3 sm:mb-5">Industries</p>
-            <ul className="space-y-2 sm:space-y-2.5">
-              {INDUSTRIES.slice(0, 5).map((ind) => (
-                <li key={ind.id}>
-                  <Link
-                    href="/industries"
-                    className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5"
-                  >
-                    {ind.title}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
           {/* Company */}
-          <div className="lg:col-span-1">
+          <div className="lg:col-span-2">
             <p className="eyebrow text-accent mb-3 sm:mb-5">Company</p>
             <ul className="space-y-2 sm:space-y-2.5">
               <li><Link href="/about" className="text-sm text-text-secondary hover:text-accent transition-colors block py-0.5">About</Link></li>
@@ -132,7 +120,7 @@ export default function Footer() {
           </div>
 
           {/* Contact */}
-          <div className="sm:col-span-2 lg:col-span-3">
+          <div className="sm:col-span-2 lg:col-span-4">
             <p className="eyebrow text-accent mb-3 sm:mb-5">Visit / Write</p>
             <ul className="space-y-3 sm:space-y-4">
               <li className="flex items-start gap-3">
@@ -160,7 +148,7 @@ export default function Footer() {
 
       {/* Oversized wordmark */}
       <section className="relative wrap pb-2 sm:pb-4 pointer-events-none select-none overflow-hidden">
-        <p className="display-serif text-[20vw] sm:text-[18vw] leading-none tracking-tighter text-white/[0.04] font-semibold whitespace-nowrap">
+        <p className="display-serif text-[170vw] sm:text-[9vw] leading-none tracking-tighter text-white/[0.04] font-semibold whitespace-nowrap">
           MANNE TECHNOLOGIES
         </p>
       </section>

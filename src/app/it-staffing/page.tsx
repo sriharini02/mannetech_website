@@ -217,11 +217,10 @@ export default function ITStaffingPage() {
             {STAFFING_SERVICES.map((service, i) => (
               <Reveal key={i} animation="fade-up" delay={i * 0.05}>
                 <div className="p-5 sm:p-8 md:p-10 border-b border-white/10 sm:border-r sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r lg:[&:nth-child(3n)]:border-r-0 h-full group hover:bg-white/[0.05] transition-colors">
-                  <div className="flex items-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                  <div className="mb-4 sm:mb-6">
                     <span className="font-mono text-[9px] sm:text-xs text-gold">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <div className="h-px flex-1 bg-ivory/20" />
                   </div>
                   <h3 className="display-serif text-lg sm:text-2xl text-ivory mb-2 sm:mb-3 font-normal group-hover:text-accent transition-colors">
                     {service.title}

@@ -66,23 +66,7 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* ══════════════════════ FEATURED IMAGE ══════════════════════ */}
-      <section className="pb-16 sm:pb-24 md:pb-32">
-        <div className="wrap">
-          <Reveal animation="scale">
-            <ParallaxImage amount={40} className="aspect-[21/9] w-full max-h-[50vh]">
-              <Image
-                src={PAGE_IMAGES.careers}
-                alt="Team collaboration at Manne Technologies"
-                fill
-                className="object-cover"
-                priority
-                sizes="100vw"
-              />
-            </ParallaxImage>
-          </Reveal>
-        </div>
-      </section>
+      
 
       {/* ══════════════════════ WHAT WE OFFER ══════════════════════ */}
       <section className="relative py-16 sm:py-24 md:py-36 bg-card border-y border-border">
@@ -98,7 +82,7 @@ export default function CareersPage() {
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-border">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-0 border-t border-l border-border">
             {pC.benefits.map((item, i) => (
               <Reveal key={i} animation="fade-up" delay={i * 0.06}>
                 <div className="p-5 sm:p-8 md:p-10 border-b border-border sm:border-r lg:[&:nth-child(3n)]:border-r-0 sm:[&:nth-child(2n)]:border-r-0 lg:[&:nth-child(2n)]:border-r h-full group">
@@ -205,7 +189,7 @@ export default function CareersPage() {
                 <span>Apply now</span>
                 <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
               </Link>
-              <Link href="/contact" className="btn-ghost border-ivory/40 text-ivory hover:text-ink text-sm sm:text-base">
+              <Link href="/contact" className="btn-ghost border-ivory/40 text-white hover:text-ink-white text-sm sm:text-base">
                 <span>Contact HR</span>
                 <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
               </Link>

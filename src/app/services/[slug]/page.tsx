@@ -159,7 +159,7 @@ export default function ServiceDetailPage() {
       {/* ══════════════════════ WHAT WE OFFER ══════════════════════ */}
       <section className="relative py-16 sm:py-24 md:py-36">
         <div className="wrap">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 mb-8 sm:mb-14">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 mb-8 sm:mb-14 items-end">
             <Reveal animation="fade-up" className="lg:col-span-7">
               <p className="eyebrow text-ink mb-3 sm:mb-4 flex items-center text-[0.6rem] sm:text-[0.7rem]">
                 <span className="eyebrow-dot" />
@@ -170,17 +170,21 @@ export default function ServiceDetailPage() {
                 <em className="italic text-accent-dark">offer</em>.
               </h2>
             </Reveal>
+            <Reveal animation="fade-up" delay={0.1} className="lg:col-span-4 lg:col-start-9 flex justify-end">
+              <Link href="/book-appointment" className="link-editorial font-display text-base sm:text-lg">
+                Book a Call
+              </Link>
+            </Reveal>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-border">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-l border-border">
             {service.sections.map((section, i) => (
               <Reveal key={i} animation="fade-up" delay={i * 0.06}>
                 <div className="p-5 sm:p-8 md:p-10 border-b border-border md:border-r md:[&:nth-child(even)]:border-r-0 h-full group hover:bg-card/60 transition-colors">
-                  <div className="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-5">
+                  <div className="mb-3 sm:mb-5">
                     <span className="font-mono text-[9px] sm:text-xs text-accent-dark">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <div className="h-px flex-1 bg-hairline" />
                   </div>
                   <h3 className="display-serif text-lg sm:text-2xl md:text-3xl text-ink mb-2 sm:mb-3 font-normal leading-tight group-hover:translate-x-1 transition-transform">
                     {section.title}
@@ -218,7 +222,7 @@ export default function ServiceDetailPage() {
               <span>Get started</span>
               <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
             </Link>
-            <Link href="/book-appointment" className="btn-ghost border-ivory/40 text-ivory hover:text-ink justify-center text-sm sm:text-base">
+            <Link href="/book-appointment" className="btn-ghost justify-center text-sm sm:text-base">
               <span>Schedule a call</span>
               <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
             </Link>

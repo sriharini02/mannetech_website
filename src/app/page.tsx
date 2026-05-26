@@ -206,7 +206,7 @@ export default function HomePage() {
                 {pH.capabilities.map((cap, i) => (
                   <div
                     key={cap}
-                    className="group flex items-start gap-1.5 sm:gap-2 py-2 sm:py-3 border-t border-border"
+                    className="group flex items-start gap-1.5 sm:gap-2 py-2 sm:py-3"
                   >
                     <span className="font-mono text-[9px] sm:text-[10px] text-graphite text-ink/50 mt-1 shrink-0">
                       0{i + 1}
@@ -221,7 +221,7 @@ export default function HomePage() {
 
             <Reveal animation="fade-up" delay={0.35}>
               <div className="mt-8 sm:mt-10">
-                <Link href="/about" className="link-editorial font-display text-base sm:text-lg">
+                <Link href="/about" className="btn-primary">
                   Learn more about our approach
                 </Link>
               </div>
@@ -234,20 +234,18 @@ export default function HomePage() {
       <section className="relative py-16 sm:py-24 md:py-36 bg-primary text-ivory overflow-hidden">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/10 rounded-full blur-[140px] pointer-events-none" />
         <div className="wrap relative">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 mb-10 sm:mb-16">
-            <Reveal animation="fade-up" className="lg:col-span-5">
+          <div className="text-center mb-14 sm:mb-20">
+            <Reveal animation="fade-up">
               <span className="inline-flex items-center px-3 py-1 rounded-full bg-white/10 text-ivory font-mono text-[0.6rem] sm:text-[0.65rem] tracking-wider uppercase mb-4 sm:mb-6">
                 <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent rounded-full mr-2 sm:mr-2.5 shrink-0" />
                 Our Principles
               </span>
-              <h2 className="display-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1] tracking-tight text-ivory font-normal">
+              <h2 className="display-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1] tracking-tight text-ivory font-normal text-balance">
                 Five commitments we
                 <br />
                 <em className="italic text-gold">never compromise.</em>
               </h2>
             </Reveal>
-
-            
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-x-10 sm:gap-y-16">

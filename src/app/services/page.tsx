@@ -79,7 +79,7 @@ export default function ServicesIndexPage() {
       </section>
 
       {/* ══════════════════════ SERVICES EDITORIAL LIST ══════════════════════ */}
-      <section className="relative pb-16 sm:pb-24 md:pb-36">
+      <section className="relative pt-12 sm:pt-16 md:pt-20 pb-16 sm:pb-24 md:pb-36">
         <div className="wrap">
           <div className="border-t border-border">
             {SERVICES.map((service, i) => {
@@ -119,34 +119,6 @@ export default function ServicesIndexPage() {
               );
             })}
           </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════ CTA ══════════════════════ */}
-      <section className="relative py-16 sm:py-24 md:py-36 bg-primary text-ivory overflow-hidden">
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-accent/5 blur-[140px] rounded-full" />
-        <div className="wrap relative grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-10 items-end">
-          <Reveal animation="fade-up" className="lg:col-span-8">
-            <p className="eyebrow text-gold mb-4 sm:mb-6 flex items-center text-[0.6rem] sm:text-[0.7rem]">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent rounded-full mr-2 sm:mr-3 shrink-0" />
-              Not sure where to begin?
-            </p>
-            <h2 className="display-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1] tracking-tight text-ivory font-normal">
-              Tell us about
-              <br />
-              your <em className="italic text-gold">ambition</em>.
-            </h2>
-          </Reveal>
-          <Reveal animation="fade-up" delay={0.2} className="lg:col-span-4 flex flex-col gap-2 sm:gap-3">
-            <Link href="/contact" className="btn-primary bg-accent border-accent text-ink justify-center text-sm sm:text-base">
-              <span>Start a conversation</span>
-              <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
-            </Link>
-            <Link href="/book-appointment" className="btn-ghost border-ivory/40 text-ivory hover:text-ink justify-center text-sm sm:text-base">
-              <span>Book a discovery call</span>
-              <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
-            </Link>
-          </Reveal>
         </div>
       </section>
     </>
