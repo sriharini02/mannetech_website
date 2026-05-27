@@ -8,47 +8,27 @@ import { motion } from "framer-motion";
 import Reveal, { RevealText } from "@/components/Reveal";
 import ParallaxImage from "@/components/ParallaxImage";
 import { COMPANY, PAGE_IMAGES, PAGES } from "@/lib/constants";
-import emailjs from "@emailjs/browser";
-
 export default function ContactPage() {
   const [form, setForm] = useState({ name: "", email: "", phone: "", message: "" });
   const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
-  e.preventDefault();
-
-  setStatus("sending");
-
-  try {
-    await emailjs.send(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
-      {
-        from_name: form.name,
-        from_email: form.email,
-        phone: form.phone,
-        message: form.message,
-      },
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
-    );
-
-    setStatus("sent");
-
-    setForm({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-  } catch (error) {
-    console.error(error);
-    setStatus("error");
-
-    setTimeout(() => {
-      setStatus("idle");
-    }, 3000);
-  }
-};
+    e.preventDefault();
+    setStatus("sending");
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (!res.ok) throw new Error("Failed");
+      setStatus("sent");
+      setForm({ name: "", email: "", phone: "", message: "" });
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 3000);
+    }
+  };
 
   return (
     <>

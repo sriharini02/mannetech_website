@@ -134,7 +134,7 @@ export default function ServiceDetailPage() {
           </Reveal>
 
           <Reveal animation="scale" delay={0.15} className="lg:col-span-5 lg:col-start-8">
-            <ParallaxImage amount={30} className="aspect-[4/5] frame-inset max-w-md mx-auto lg:mx-0">
+            <ParallaxImage amount={30} className="aspect-[3/2] frame-inset max-w-md mx-auto lg:mx-0">
               <Image
                 src={SERVICE_IMAGES[slug] || SERVICE_IMAGES["it-services"]}
                 alt={`${service.title} by ${COMPANY.name}`}

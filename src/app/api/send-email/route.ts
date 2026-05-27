@@ -25,7 +25,7 @@ function wrapTemplate(title: string, content: string) {
       </div>
       ${content}
       <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #E3DCCB; font-size: 11px; color: #5A6677;">
-        <p style="margin: 0;">This message was sent via mannetechnologies.com</p>
+       
       </div>
     </div>
   `;
@@ -125,11 +125,14 @@ export async function POST(req: NextRequest) {
     }
 
     // If SMTP not configured, return success in dev (no crash)
-    if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
-      console.warn("[send-email] SMTP not configured — skipping actual send. Set env vars to enable.");
-      console.log({ subject, recipient: process.env.CONTACT_TO || "unset" });
-      return NextResponse.json({ success: true, dev: true });
-    }
+   console.log("SMTP_HOST =", process.env.SMTP_HOST);
+console.log("SMTP_USER =", process.env.SMTP_USER);
+console.log("SMTP_PASS =", process.env.SMTP_PASS ? "FOUND" : "MISSING");
+
+if (!process.env.SMTP_HOST || !process.env.SMTP_USER || !process.env.SMTP_PASS) {
+  console.warn("[contact] SMTP not configured — skipping send.");
+  return NextResponse.json({ success: true, dev: true });
+}
 
     await transporter.sendMail({
       from: process.env.SMTP_FROM || process.env.SMTP_USER,

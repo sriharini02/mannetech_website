@@ -172,7 +172,7 @@ export default function BookAppointmentPage() {
                   <div className="flex items-center justify-between mb-6 sm:mb-8">
                     <button
                       onClick={prevMonth}
-                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-border flex items-center justify-center hover:border-ink hover:bg-primary hover:text-ivory transition-colors"
+                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-border text-ink flex items-center justify-center hover:border-ink hover:bg-primary hover:text-ivory transition-colors"
                       aria-label="Previous month"
                     >
                       <ChevronLeft className="w-3.5 h-3.5 sm:w-4 sm:h-4" strokeWidth={1.5} />
@@ -185,7 +185,7 @@ export default function BookAppointmentPage() {
                     </div>
                     <button
                       onClick={nextMonth}
-                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-border flex items-center justify-center hover:border-ink hover:bg-primary hover:text-ivory transition-colors"
+                      className="w-8 h-8 sm:w-10 sm:h-10 rounded-full border border-border text-ink flex items-center justify-center hover:border-ink hover:bg-primary hover:text-ivory transition-colors"
                       aria-label="Next month"
                     >
                       <ChevronRight className="w-3.5 h-3.5 sm:w-4 sm:h-4" strokeWidth={1.5} />
@@ -209,10 +209,10 @@ export default function BookAppointmentPage() {
                             onClick={() => { setSelectedDate(day); setSelectedSlot(null); }}
                             className={`w-full h-full flex items-center justify-center text-[10px] sm:text-sm font-display transition-all rounded-full ${
                               selectedDate === day
-                                ? "bg-primary text-gold font-semibold"
+                                ? "bg-primary text-ivory font-semibold"
                                 : isBookable(day)
                                 ? "hover:bg-ink/5 text-ink/70 hover:text-ink"
-                                : "text-ink/15 cursor-not-allowed"
+                                : "text-ink/30 cursor-not-allowed"
                             }`}
                           >
                             {day}
@@ -239,7 +239,7 @@ export default function BookAppointmentPage() {
                             onClick={() => setSelectedSlot(slot)}
                             className={`py-1.5 sm:py-2 px-1 text-[9px] sm:text-xs text-center border font-mono transition-all ${
                               selectedSlot === slot
-                                ? "border-ink bg-primary text-gold"
+                                ? "border-ink bg-primary text-ivory"
                                 : "border-border text-ink/60 hover:border-ink"
                             }`}
                           >
@@ -313,12 +313,12 @@ export default function BookAppointmentPage() {
                         animate={{ opacity: 1 }}
                         className="bg-primary text-ivory p-3 sm:p-4 border border-primary text-sm"
                       >
-                        <p className="font-mono text-[8px] sm:text-[10px] tracking-widest uppercase text-gold mb-1 sm:mb-2">
+                        <p className="font-mono text-[8px] sm:text-[10px] tracking-widest uppercase text-accent mb-1 sm:mb-2">
                           Selected appointment
                         </p>
                         <p className="text-xs sm:text-sm">
                           {MONTHS[currentMonth]} {selectedDate}, {currentYear} at{" "}
-                          <span className="text-gold font-semibold">{selectedSlot}</span>
+                          <span className="text-accent font-semibold">{selectedSlot}</span>
                         </p>
                       </motion.div>
                     )}
