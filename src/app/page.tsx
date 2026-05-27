@@ -618,36 +618,47 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ══════════════════════ PARTNERS MARQUEE ══════════════════════ */}
-      <section className="py-14 sm:py-20 md:py-28 border-y border-border bg-white overflow-hidden">
-        <Reveal className="wrap mb-6 sm:mb-10">
-          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 sm:gap-6">
+      {/* ══════════════════════ PARTNERS ══════════════════════ */}
+      <section className="relative py-16 sm:py-24 md:py-32 border-y border-border bg-[#F8F8F6] overflow-hidden">
+        <Reveal className="wrap mb-10 sm:mb-14">
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 sm:gap-6 mb-4 sm:mb-6">
             <span className="inline-flex items-center px-3 py-1 rounded-full bg-card text-ink font-mono text-[0.6rem] sm:text-[0.65rem] tracking-wider uppercase">
               Strategic Partners & Technology Alliances
             </span>
-            <p className="text-xs sm:text-sm text-ink/50">
-              Certified partnerships with the world's leading technology platforms.
+          </div>
+          <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-2 sm:gap-6">
+            <h2 className="display-serif text-3xl sm:text-4xl md:text-5xl leading-[1] tracking-tight text-ink font-normal">
+              Trusted Technology
+              <br />
+              <em className="italic text-accent-dark">Ecosystem</em>
+            </h2>
+            <p className="text-xs sm:text-sm text-ink/50 max-w-md">
+              Certified partnerships with leading enterprise technology platforms.
             </p>
           </div>
         </Reveal>
 
-        <Marquee speed={50}>
-          {PARTNERS.map((p, i) => (
+        {/* Fade overlays */}
+        <div className="absolute left-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-r from-[#F8F8F6] to-transparent z-10 pointer-events-none" />
+        <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-l from-[#F8F8F6] to-transparent z-10 pointer-events-none" />
+
+        <Marquee speed={25} pauseOnHover>
+          {[...PARTNERS, ...PARTNERS, ...PARTNERS].map((p, i) => (
             <div
               key={i}
-              className="flex items-center gap-2 sm:gap-3 mx-5 sm:mx-8 md:mx-14 opacity-60 hover:opacity-100 transition-opacity duration-300"
+              className="flex items-center justify-center mx-6 sm:mx-8 md:mx-10 opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-300"
+              style={{ filter: "grayscale(70%)" }}
+              onMouseEnter={(e) => { e.currentTarget.style.filter = "grayscale(0%)"; }}
+              onMouseLeave={(e) => { e.currentTarget.style.filter = "grayscale(70%)"; }}
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={p.logo}
                 alt={`${p.name} logo`}
-                className="w-5 h-5 sm:w-6 sm:h-6 object-contain"
+                className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 object-contain"
                 loading="lazy"
+                onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
               />
-              <span className="font-display text-2xl sm:text-3xl md:text-4xl text-ink whitespace-nowrap font-normal">
-                {p.name}
-              </span>
-              <span className="mx-2 sm:mx-4 md:mx-6 text-accent">✦</span>
             </div>
           ))}
         </Marquee>

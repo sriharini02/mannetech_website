@@ -2,30 +2,29 @@
 
 import { ReactNode } from "react";
 
-/**
- * Infinite horizontal marquee. Pause on hover. CSS-driven for perf.
- */
 export default function Marquee({
   children,
-  speed = 45,
+  speed = 15,
   className = "",
   reverse = false,
+  pauseOnHover = true,
 }: {
   children: ReactNode;
   speed?: number;
   className?: string;
   reverse?: boolean;
+  pauseOnHover?: boolean;
 }) {
   return (
     <div className={`relative overflow-hidden ${className}`}>
       <div
-        className="flex w-max"
+        className={`flex w-max ${pauseOnHover ? "marquee-track" : ""}`}
         style={{
           animation: `marquee ${speed}s linear infinite ${reverse ? "reverse" : ""}`,
         }}
       >
-        <div className="flex shrink-0">{children}</div>
-        <div className="flex shrink-0" aria-hidden="true">
+        <div className="flex shrink-0 items-center">{children}</div>
+        <div className="flex shrink-0 items-center" aria-hidden="true">
           {children}
         </div>
       </div>

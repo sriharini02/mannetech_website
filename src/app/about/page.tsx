@@ -97,11 +97,11 @@ export default function AboutPage() {
             ))}
 
             <Reveal animation="fade-up" delay={0.4}>
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 mt-6 sm:mt-10 border-t border-r border-border">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-0 mt-6 sm:mt-10 border-t border-l border-r border-border">
                 {pA.stats.map((item, i) => (
                   <div
                     key={i}
-                    className="py-4 sm:py-6 px-3 sm:px-4 text-center border-r border-border last:border-r-0"
+                    className="py-4 sm:py-6 px-3 sm:px-4 text-center border-b border-r border-border last:border-r-0"
                   >
                     <p className="display-serif text-2xl sm:text-3xl md:text-4xl text-ink font-semibold leading-none mb-2 sm:mb-3">
                       {item.number}

@@ -148,7 +148,7 @@ export default function Footer() {
 
       {/* Oversized wordmark */}
       <section className="relative wrap pb-2 sm:pb-4 pointer-events-none select-none overflow-hidden">
-        <p className="display-serif text-[170vw] sm:text-[9vw] leading-none tracking-tighter text-white/[0.04] font-semibold whitespace-nowrap">
+        <p className="display-serif text-[170vw] sm:text-[8vw] leading-none tracking-tighter text-white/[0.04] font-semibold whitespace-nowrap">
           MANNE TECHNOLOGIES
         </p>
       </section>
