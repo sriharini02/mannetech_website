@@ -378,7 +378,7 @@ body {
   background: transparent;
   border: none;
   border-bottom: 1px solid var(--hairline);
-  color: var(--text-primary);
+  color: var(--ink);
   font-family: var(--font-inter), "Inter", sans-serif;
   font-size: 1rem;
   transition: border-color 0.3s ease;
@@ -417,6 +417,30 @@ select.form-input {
 }
 
 .marquee-track:hover {
+  animation-play-state: paused;
+}
+
+/* ─── Vertical Marquee Animations ─── */
+@keyframes marquee-vertical-up {
+  0% { transform: translateY(0%); }
+  100% { transform: translateY(-50%); }
+}
+
+@keyframes marquee-vertical-down {
+  0% { transform: translateY(-50%); }
+  100% { transform: translateY(0%); }
+}
+
+.marquee-vertical-up {
+  animation: marquee-vertical-up 30s linear infinite;
+}
+
+.marquee-vertical-down {
+  animation: marquee-vertical-down 30s linear infinite;
+}
+
+.marquee-vertical-up:hover,
+.marquee-vertical-down:hover {
   animation-play-state: paused;
 }
 

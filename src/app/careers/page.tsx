@@ -1,12 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
-import { ArrowRight, ArrowUpRight, MapPin, Briefcase, Clock } from "lucide-react";
+import { ArrowUpRight, MapPin, Briefcase, Clock } from "lucide-react";
 import { motion } from "framer-motion";
 import Reveal, { RevealText } from "@/components/Reveal";
 import ParallaxImage from "@/components/ParallaxImage";
-import { COMPANY, JOBS, PAGE_IMAGES, PAGES } from "@/lib/constants";
+import { JOBS, PAGE_IMAGES, PAGES } from "@/lib/constants";
 
 export default function CareersPage() {
   const pC = PAGES.careers;
@@ -158,43 +157,6 @@ export default function CareersPage() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════ EMPOWER CTA ══════════════════════ */}
-      <section className="relative py-16 sm:py-24 md:py-36 bg-primary text-ivory overflow-hidden">
-        <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-accent/5 blur-[140px] rounded-full" />
-        <div className="wrap relative text-center max-w-3xl mx-auto">
-          <Reveal animation="fade-up">
-            <p className="eyebrow text-gold mb-4 sm:mb-6 flex items-center justify-center text-[0.6rem] sm:text-[0.7rem]">
-              <span className="w-1.5 h-1.5 sm:w-2 sm:h-2 bg-accent rounded-full mr-2 sm:mr-3 shrink-0" />
-              Grow with us
-            </p>
-          </Reveal>
-          <Reveal animation="fade-up" delay={0.1}>
-            <h2 className="display-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1] tracking-tight text-ivory font-normal mb-6 sm:mb-8">
-              Empowering people.
-              <br />
-              <em className="italic text-gold">Transforming enterprises.</em>
-            </h2>
-          </Reveal>
-          <Reveal animation="fade-up" delay={0.2}>
-            <p className="text-ivory/70 text-base sm:text-lg leading-relaxed font-light mb-6 sm:mb-10">
-              At {COMPANY.name}, we believe our success is driven by the success of our people. Join a global team of {COMPANY.employees} technology professionals solving the world's most complex enterprise challenges.
-            </p>
-          </Reveal>
-          <Reveal animation="fade-up" delay={0.3}>
-            <div className="flex flex-wrap gap-3 sm:gap-4 justify-center">
-              <Link href="/apply" className="btn-primary bg-accent border-accent text-ink text-sm sm:text-base">
-                <span>Apply now</span>
-                <ArrowUpRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
-              </Link>
-              <Link href="/contact" className="btn-ghost border-ivory/40 text-white hover:text-ink-white text-sm sm:text-base">
-                <span>Contact HR</span>
-                <ArrowRight className="w-3.5 h-3.5 sm:w-4 sm:h-4 btn-arrow" strokeWidth={2} />
-              </Link>
-            </div>
-          </Reveal>
         </div>
       </section>
     </>

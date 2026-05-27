@@ -18,15 +18,27 @@
     "company": "Pacific Logistics Group"
   },
   {
-    "quote": "Their cybersecurity team conducted a comprehensive risk assessment and implemented a zero-trust architecture that exceeded our compliance requirements. ManneTech's proactive threat detection has prevented multiple sophisticated attacks.",
-    "name": "Dr. Sarah Okonkwo",
-    "role": "Chief Information Security Officer",
-    "company": "NexaBank Financial Services"
+    "quote": "Manne Technologies built a scalable, high-performance eCommerce platform that increased our online sales by 70% in less than a year. Their technical expertise and attention to detail exceeded expectations.",
+    "name": "Ananya Reddy",
+    "role": "Head of Technology",
+    "company": "Nova Retail"
   },
   {
-    "quote": "Manne Technologies doesn't just deliver projects — they deliver business outcomes. Our digital transformation roadmap, co-created with their strategy team, has accelerated time-to-market by 4x and opened three new revenue channels.",
-    "name": "Michael Torres",
-    "role": "CEO",
-    "company": "Ventura Health Systems"
+    "quote": "Their cybersecurity team implemented a comprehensive security framework and zero-trust architecture that significantly strengthened our compliance posture and reduced operational risk.",
+    "name": "Robert Williams",
+    "role": "Director of Operations",
+    "company": "BlueStone Industries"
+  },
+  {
+    "quote": "The digital transformation roadmap created by Manne Technologies accelerated our modernization efforts, reduced process inefficiencies, and unlocked new revenue opportunities across the business.",
+    "name": "John Carter",
+    "role": "Chief Executive Officer",
+    "company": "BrightPath Solutions"
+  },
+  {
+    "quote": "The healthcare platform delivered by Manne Technologies improved patient engagement, streamlined internal workflows, and provided the scalability needed for future growth.",
+    "name": "Neha Kapoor",
+    "role": "Chief Information Officer",
+    "company": "HealthPlus Systems"
   }
 ]

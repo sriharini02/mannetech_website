@@ -13,8 +13,8 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const INK = "#0B2545";
-const GOLD = "#F4B942";
+const INK = "#0E3B4A";
+const GOLD = "#4E7A88";
 
 function wrapTemplate(title: string, content: string) {
   return `
@@ -52,18 +52,19 @@ export async function POST(req: NextRequest) {
         if (!name || !email || !message) {
           return NextResponse.json({ error: "Missing required contact fields" }, { status: 400 });
         }
-        subject = `New contact inquiry — ${name}`;
+        subject = `New Website Enquiry - ${name}`;
         html = wrapTemplate(
-          "New contact form submission",
+          "New Website Enquiry",
           `
           <table style="width: 100%; border-collapse: collapse; font-size: 14px;">
             <tr><td style="padding: 8px 0; color: #5A6677; width: 120px;"><strong>Name:</strong></td><td>${name}</td></tr>
             <tr><td style="padding: 8px 0; color: #5A6677;"><strong>Email:</strong></td><td><a href="mailto:${email}" style="color: ${INK};">${email}</a></td></tr>
             ${phone ? `<tr><td style="padding: 8px 0; color: #5A6677;"><strong>Phone:</strong></td><td>${phone}</td></tr>` : ""}
+            <tr><td style="padding: 8px 0; color: #5A6677;"><strong>Message:</strong></td><td style="white-space: pre-wrap; line-height: 1.5;">${message}</td></tr>
           </table>
-          <div style="margin-top: 20px; padding: 16px; background: #FBF6EB; border-left: 3px solid ${GOLD};">
-            <strong style="color: ${INK};">Message:</strong>
-            <p style="color: #0F1419; margin: 10px 0 0; white-space: pre-wrap; line-height: 1.5;">${message}</p>
+          <div style="margin-top: 20px; padding: 12px 0; border-top: 1px solid #E3DCCB; font-size: 12px; color: #5A6677;">
+            <p><strong>Submitted At:</strong> ${new Date().toLocaleString("en-US", { timeZone: "America/Chicago" })} CST</p>
+            <p><strong>Source Website:</strong> mannetechnologies.com</p>
           </div>
           `
         );

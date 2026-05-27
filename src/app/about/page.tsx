@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 
 import Reveal, { RevealText } from "@/components/Reveal";
 import ParallaxImage from "@/components/ParallaxImage";
+import VerticalMarquee from "@/components/VerticalMarquee";
 import { COMPANY, PAGES, TESTIMONIALS, PAGE_IMAGES, PRINCIPLES } from "@/lib/constants";
 
 export default function AboutPage() {
@@ -173,7 +174,7 @@ export default function AboutPage() {
             
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-border">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-0 border-t border-l border-border">
             {PRINCIPLES.map((p, i) => (
               <Reveal key={i} animation="fade-up" delay={i * 0.1}>
                 <div className="p-5 sm:p-8 md:p-10 border-b md:border-b border-border md:border-r group hover:bg-white/60 transition-colors h-full">
@@ -305,26 +306,87 @@ export default function AboutPage() {
             </h2>
           </Reveal>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border-t border-border">
-            {TESTIMONIALS.map((t, i) => (
-              <Reveal key={i} animation="fade-up" delay={i * 0.1}>
-                <div className="p-6 sm:p-8 md:p-10 h-full flex flex-col border-b md:border-b-0 md:border-r border-border last:border-r-0">
-                  <span className="display-serif italic text-4xl sm:text-6xl text-accent leading-none mb-1">&ldquo;</span>
-                  <p className="pull-quote text-base sm:text-lg md:text-xl text-ink leading-[1.3] mb-6 sm:mb-8 flex-1">
-                    {t.quote}
-                  </p>
-                  <div className="flex gap-0.5 mb-3 sm:mb-4">
-                    {[...Array(5)].map((_, j) => (
-                      <Star key={j} className="w-2.5 h-2.5 sm:w-3 sm:h-3 fill-accent text-accent" strokeWidth={0} />
-                    ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 md:gap-8">
+            {/* Left column - scrolls up */}
+            <div className="relative overflow-hidden" style={{ maxHeight: "36rem" }}>
+              <VerticalMarquee direction="up" speed={35}>
+                {TESTIMONIALS.slice(0, 4).map((t, i) => (
+                  <div key={i} className="p-6 sm:p-8 bg-white border border-border rounded-2xl mb-4 sm:mb-5 flex flex-col group">
+                    <span className="display-serif italic text-4xl sm:text-5xl text-accent leading-none mb-2 sm:mb-3">
+                      &ldquo;
+                    </span>
+                    <p className="pull-quote text-base sm:text-lg text-ink leading-[1.3] flex-1 mb-4 sm:mb-5">
+                      {t.quote}
+                    </p>
+                    <div className="flex gap-0.5 mb-3 sm:mb-4">
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-accent text-accent" strokeWidth={0} />
+                      ))}
+                    </div>
+                    <div className="border-t border-border pt-3 sm:pt-4">
+                      <p className="font-display text-xs sm:text-sm font-semibold text-ink">{t.name}</p>
+                      <p className="text-[10px] sm:text-xs text-ink/50 mt-0.5">{t.role} · {t.company}</p>
+                    </div>
                   </div>
-                  <div className="border-t border-border pt-3 sm:pt-4">
-                    <p className="font-display text-xs sm:text-sm font-semibold text-ink">{t.name}</p>
-                    <p className="text-[10px] sm:text-xs text-ink/50 mt-0.5">{t.role} · {t.company}</p>
+                ))}
+              </VerticalMarquee>
+              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-card to-transparent pointer-events-none z-10" />
+              <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-card to-transparent pointer-events-none z-10" />
+            </div>
+
+            {/* Right column - scrolls down */}
+            <div className="relative overflow-hidden hidden md:block" style={{ maxHeight: "36rem" }}>
+              <VerticalMarquee direction="down" speed={35}>
+                {TESTIMONIALS.slice(3).map((t, i) => (
+                  <div key={i} className="p-6 sm:p-8 bg-white border border-border rounded-2xl mb-4 sm:mb-5 flex flex-col group">
+                    <span className="display-serif italic text-4xl sm:text-5xl text-accent leading-none mb-2 sm:mb-3">
+                      &ldquo;
+                    </span>
+                    <p className="pull-quote text-base sm:text-lg text-ink leading-[1.3] flex-1 mb-4 sm:mb-5">
+                      {t.quote}
+                    </p>
+                    <div className="flex gap-0.5 mb-3 sm:mb-4">
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-accent text-accent" strokeWidth={0} />
+                      ))}
+                    </div>
+                    <div className="border-t border-border pt-3 sm:pt-4">
+                      <p className="font-display text-xs sm:text-sm font-semibold text-ink">{t.name}</p>
+                      <p className="text-[10px] sm:text-xs text-ink/50 mt-0.5">{t.role} · {t.company}</p>
+                    </div>
                   </div>
-                </div>
-              </Reveal>
-            ))}
+                ))}
+              </VerticalMarquee>
+              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-card to-transparent pointer-events-none z-10" />
+              <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-card to-transparent pointer-events-none z-10" />
+            </div>
+
+            {/* Mobile single column - scrolls up */}
+            <div className="relative overflow-hidden md:hidden" style={{ maxHeight: "36rem" }}>
+              <VerticalMarquee direction="up" speed={30}>
+                {TESTIMONIALS.slice(3).map((t, i) => (
+                  <div key={i} className="p-6 sm:p-8 bg-white border border-border rounded-2xl mb-4 sm:mb-5 flex flex-col group">
+                    <span className="display-serif italic text-4xl sm:text-5xl text-accent leading-none mb-2 sm:mb-3">
+                      &ldquo;
+                    </span>
+                    <p className="pull-quote text-base sm:text-lg text-ink leading-[1.3] flex-1 mb-4 sm:mb-5">
+                      {t.quote}
+                    </p>
+                    <div className="flex gap-0.5 mb-3 sm:mb-4">
+                      {[...Array(5)].map((_, j) => (
+                        <Star key={j} className="w-3 h-3 sm:w-3.5 sm:h-3.5 fill-accent text-accent" strokeWidth={0} />
+                      ))}
+                    </div>
+                    <div className="border-t border-border pt-3 sm:pt-4">
+                      <p className="font-display text-xs sm:text-sm font-semibold text-ink">{t.name}</p>
+                      <p className="text-[10px] sm:text-xs text-ink/50 mt-0.5">{t.role} · {t.company}</p>
+                    </div>
+                  </div>
+                ))}
+              </VerticalMarquee>
+              <div className="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-card to-transparent pointer-events-none z-10" />
+              <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-card to-transparent pointer-events-none z-10" />
+            </div>
           </div>
         </div>
       </section>

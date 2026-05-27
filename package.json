@@ -1,5 +1,5 @@
 {
-  "name": "han-solutions",
+  "name": "manne-technologies",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "clsx": "^2.1.1",
     "framer-motion": "^11.11.17",
     "lenis": "^1.1.20",
