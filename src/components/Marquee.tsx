@@ -4,7 +4,7 @@ import { ReactNode } from "react";
 
 export default function Marquee({
   children,
-  speed = 15,
+  speed = 35,
   className = "",
   reverse = false,
   pauseOnHover = true,
@@ -16,11 +16,15 @@ export default function Marquee({
   pauseOnHover?: boolean;
 }) {
   return (
-    <div className={`relative overflow-hidden ${className}`}>
+    <div
+      className={`relative overflow-hidden ${className}`}
+      {...(pauseOnHover ? { onMouseEnter: (e) => { (e.currentTarget.firstChild as HTMLElement)?.style?.setProperty?.("animation-play-state", "paused"); }, onMouseLeave: (e) => { (e.currentTarget.firstChild as HTMLElement)?.style?.setProperty?.("animation-play-state", "running"); } } : {})}
+    >
       <div
-        className={`flex w-max ${pauseOnHover ? "marquee-track" : ""}`}
+        className="flex w-max"
         style={{
-          animation: `marquee ${speed}s linear infinite ${reverse ? "reverse" : ""}`,
+          animation: `marquee ${speed}s linear infinite`,
+          animationDirection: reverse ? "reverse" : "normal",
         }}
       >
         <div className="flex shrink-0 items-center">{children}</div>

@@ -254,7 +254,7 @@ export default function ITStaffingPage() {
         <div className="absolute right-0 top-0 bottom-0 w-24 sm:w-32 bg-gradient-to-l from-[#F8F8F6] to-transparent z-10 pointer-events-none" />
 
         <Marquee speed={25} pauseOnHover>
-          {[...PARTNERS, ...PARTNERS, ...PARTNERS].map((p, i) => (
+          {[...PARTNERS, ...PARTNERS].map((p, i) => (
             <div
               key={i}
               className="flex items-center justify-center mx-6 sm:mx-8 md:mx-10 opacity-60 hover:opacity-100 hover:scale-105 transition-all duration-300"
